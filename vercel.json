@@ -10,7 +10,7 @@
     {
       "src": "/czarny_kot/wsgi.py",
       "use": "@vercel/python",
-       "config": { "maxLambdaSize": "50mb" }
+      "config": { "maxLambdaSize": "15mb" }
     }
   ],
   "routes": [
