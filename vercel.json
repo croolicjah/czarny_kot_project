@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "/czarny_kot/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "czarny_kot/wsgi.py"
+    }
+  ]
+}

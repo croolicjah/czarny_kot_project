@@ -1,0 +1,1017 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="82ae62d7-b711-498d-9d12-923f4246f6d2" name="Changes" comment="setting up for vercel">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/czarny_kot_project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/7f8e0b23-4692-4669-a516-0b47b9ed7545.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/7f8e0b23-4692-4669-a516-0b47b9ed7545/storage_v2/_src_/database/verceldb.hSjLiA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/7f8e0b23-4692-4669-a516-0b47b9ed7545/storage_v2/_src_/database/verceldb.hSjLiA/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/7f8e0b23-4692-4669-a516-0b47b9ed7545/storage_v2/_src_/database/verceldb.hSjLiA/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/7f8e0b23-4692-4669-a516-0b47b9ed7545/storage_v2/_src_/database/verceldb.hSjLiA/schema/public.abK9xQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/asgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/assets/css/carousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/assets/css/carousel.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/assets/img/czarnuchnaczerwonym.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/assets/img/czarny_kot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/assets/img/direct_actionRabit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/assets/img/freeschool.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/assets/img/kotCz.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/assets/img/koty.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/assets/img/marco-kot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/assets/img/marco-large.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/assets/img/marco-vertical.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/assets/img/marco-vertical.png-autosave.kra" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/assets/img/plakat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/assets/img/sabotage.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/assets/img/zachod-slonca.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/assets/js/jquery-3.7.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/.babelrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/.browserslistrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/.bundlewatch.config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/.cspell.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/.eslintignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/.github/CODEOWNERS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/.github/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/.github/ISSUE_TEMPLATE/bug_report.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/.github/ISSUE_TEMPLATE/config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/.github/ISSUE_TEMPLATE/feature_request.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/.github/PULL_REQUEST_TEMPLATE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/.github/SUPPORT.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/.github/codeql/codeql-config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/.github/dependabot.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/.github/release-drafter.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/.github/workflows/browserstack.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/.github/workflows/bundlewatch.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/.github/workflows/calibreapp-image-actions.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/.github/workflows/codeql.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/.github/workflows/cspell.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/.github/workflows/css.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/.github/workflows/docs.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/.github/workflows/issue-close-require.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/.github/workflows/issue-labeled.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/.github/workflows/js.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/.github/workflows/lint.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/.github/workflows/node-sass.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/.github/workflows/release-notes.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/.npmrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/.stylelintignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/.stylelintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/CODE_OF_CONDUCT.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/SECURITY.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/build/banner.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/build/build-plugins.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/build/change-version.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/build/generate-sri.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/build/postcss.config.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/build/rollup.config.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/build/vnu-jar.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/build/zip-examples.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/css/bootstrap-utilities.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/css/bootstrap.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/js/bootstrap.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/js/bootstrap.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/js/bootstrap.esm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/dist/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/hugo.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/alert.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/alert.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/base-component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/base-component.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/button.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/button.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/carousel.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/collapse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/collapse.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/color-modes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/dom/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/dom/data.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/dom/event-handler.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/dom/event-handler.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/dom/manipulator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/dom/manipulator.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/dom/selector-engine.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/dom/selector-engine.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/dropdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/dropdown.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/modal.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/offcanvas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/offcanvas.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/popover.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/popover.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/scrollspy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/scrollspy.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/tab.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/tab.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/toast.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/toast.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/tooltip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/tooltip.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/util/backdrop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/util/backdrop.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/util/component-functions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/util/component-functions.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/util/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/util/config.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/util/focustrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/util/focustrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/util/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/util/index.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/util/sanitizer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/util/sanitizer.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/util/scrollbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/util/scrollbar.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/util/swipe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/util/swipe.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/util/template-factory.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/dist/util/template-factory.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/index.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/index.umd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/src/alert.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/src/base-component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/src/button.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/src/carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/src/collapse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/src/dom/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/src/dom/event-handler.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/src/dom/manipulator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/src/dom/selector-engine.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/src/dropdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/src/modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/src/offcanvas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/src/popover.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/src/scrollspy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/src/tab.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/src/toast.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/src/tooltip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/src/util/backdrop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/src/util/component-functions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/src/util/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/src/util/focustrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/src/util/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/src/util/sanitizer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/src/util/scrollbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/src/util/swipe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/src/util/template-factory.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/browsers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/helpers/fixture.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/integration/bundle-modularity.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/integration/bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/integration/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/integration/rollup.bundle-modularity.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/integration/rollup.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/unit/alert.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/unit/base-component.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/unit/button.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/unit/carousel.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/unit/collapse.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/unit/dom/data.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/unit/dom/event-handler.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/unit/dom/manipulator.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/unit/dom/selector-engine.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/unit/dropdown.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/unit/jquery.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/unit/modal.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/unit/offcanvas.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/unit/popover.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/unit/scrollspy.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/unit/tab.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/unit/toast.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/unit/tooltip.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/unit/util/backdrop.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/unit/util/component-functions.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/unit/util/config.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/unit/util/focustrap.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/unit/util/index.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/unit/util/sanitizer.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/unit/util/scrollbar.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/unit/util/swipe.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/unit/util/template-factory.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/visual/alert.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/visual/button.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/visual/carousel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/visual/collapse.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/visual/dropdown.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/visual/input.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/visual/modal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/visual/popover.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/visual/scrollspy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/visual/tab.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/visual/toast.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/js/tests/visual/tooltip.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/nuget/MyGet.ps1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/nuget/bootstrap.nuspec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/nuget/bootstrap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/nuget/bootstrap.sass.nuspec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/package.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/_accordion.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/_alert.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/_badge.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/_breadcrumb.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/_button-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/_card.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/_carousel.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/_close.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/_containers.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/_dropdown.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/_functions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/_grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/_helpers.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/_images.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/_list-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/_maps.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/_modal.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/_nav.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/_navbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/_offcanvas.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/_pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/_placeholders.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/_popover.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/_progress.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/_reboot.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/_root.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/_spinners.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/_tables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/_toasts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/_tooltip.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/_transitions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/_type.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/_utilities.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/_variables-dark.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/bootstrap-grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/bootstrap-reboot.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/bootstrap-utilities.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/bootstrap.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/forms/_floating-labels.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/forms/_form-check.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/forms/_form-control.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/forms/_form-range.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/forms/_form-select.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/forms/_form-text.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/forms/_input-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/forms/_labels.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/forms/_validation.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/helpers/_clearfix.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/helpers/_color-bg.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/helpers/_colored-links.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/helpers/_focus-ring.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/helpers/_icon-link.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/helpers/_position.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/helpers/_ratio.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/helpers/_stacks.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/helpers/_stretched-link.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/helpers/_text-truncation.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/helpers/_visually-hidden.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/helpers/_vr.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/mixins/_alert.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/mixins/_backdrop.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/mixins/_banner.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/mixins/_border-radius.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/mixins/_box-shadow.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/mixins/_breakpoints.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/mixins/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/mixins/_caret.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/mixins/_clearfix.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/mixins/_color-mode.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/mixins/_color-scheme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/mixins/_container.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/mixins/_deprecate.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/mixins/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/mixins/_gradients.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/mixins/_grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/mixins/_image.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/mixins/_list-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/mixins/_lists.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/mixins/_pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/mixins/_reset-text.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/mixins/_resize.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/mixins/_table-variants.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/mixins/_text-truncate.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/mixins/_transition.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/mixins/_utilities.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/mixins/_visually-hidden.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/tests/jasmine.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/tests/mixins/_color-modes.test.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/tests/mixins/_media-query-color-mode-full.test.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/tests/mixins/_utilities.test.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/tests/sass-true/register.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/tests/sass-true/runner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/tests/utilities/_api.test.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/utilities/_api.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/scss/vendor/_rfs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/assets/js/application.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/assets/js/code-examples.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/assets/js/search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/assets/js/snippets.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/assets/js/vendor/clipboard.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/assets/scss/_ads.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/assets/scss/_anchor.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/assets/scss/_brand.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/assets/scss/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/assets/scss/_callouts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/assets/scss/_clipboard-js.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/assets/scss/_colors.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/assets/scss/_component-examples.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/assets/scss/_content.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/assets/scss/_footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/assets/scss/_layout.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/assets/scss/_masthead.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/assets/scss/_navbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/assets/scss/_placeholder-img.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/assets/scss/_scrolling.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/assets/scss/_search.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/assets/scss/_sidebar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/assets/scss/_skippy.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/assets/scss/_syntax.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/assets/scss/_toc.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/assets/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/assets/scss/docs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/404.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/_index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/about/brand.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/about/license.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/about/overview.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/about/team.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/about/translations.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/components/accordion.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/components/alerts.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/components/badge.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/components/breadcrumb.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/components/button-group.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/components/buttons.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/components/card.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/components/carousel.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/components/close-button.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/components/collapse.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/components/dropdowns.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/components/list-group.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/components/modal.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/components/navbar.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/components/navs-tabs.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/components/offcanvas.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/components/pagination.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/components/placeholders.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/components/popovers.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/components/progress.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/components/scrollspy.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/components/spinners.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/components/toasts.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/components/tooltips.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/content/figures.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/content/images.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/content/reboot.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/content/tables.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/content/typography.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/customize/color-modes.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/customize/color.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/customize/components.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/customize/css-variables.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/customize/optimize.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/customize/options.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/customize/overview.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/customize/sass.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/docsref.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/_index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/album-rtl/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/album/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/badges/badges.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/badges/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/blog-rtl/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/blog/blog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/blog/blog.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/blog/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/breadcrumbs/breadcrumbs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/breadcrumbs/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/buttons/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/carousel-rtl/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/carousel/carousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/carousel/carousel.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/carousel/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/cheatsheet-rtl/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/cheatsheet/cheatsheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/cheatsheet/cheatsheet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/cheatsheet/cheatsheet.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/cheatsheet/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/checkout-rtl/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/checkout/checkout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/checkout/checkout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/checkout/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/cover/cover.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/cover/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/dashboard-rtl/dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/dashboard-rtl/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/dashboard/dashboard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/dashboard/dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/dashboard/dashboard.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/dashboard/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/dropdowns/dropdowns.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/dropdowns/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/features/features.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/features/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/features/unsplash-photo-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/features/unsplash-photo-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/features/unsplash-photo-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/footers/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/grid/grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/grid/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/headers/headers.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/headers/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/heroes/bootstrap-docs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/heroes/bootstrap-themes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/heroes/heroes.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/heroes/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/jumbotron/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/jumbotrons/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/jumbotrons/jumbotrons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/list-groups/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/list-groups/list-groups.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/masonry/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/modals/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/modals/modals.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/navbar-bottom/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/navbar-fixed/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/navbar-fixed/navbar-fixed.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/navbar-static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/navbar-static/navbar-static.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/navbars-offcanvas/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/navbars-offcanvas/navbars-offcanvas.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/navbars/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/navbars/navbars.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/offcanvas-navbar/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/offcanvas-navbar/offcanvas-navbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/offcanvas-navbar/offcanvas-navbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/pricing/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/pricing/pricing.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/product/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/product/product.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/sidebars/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/sidebars/sidebars.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/sidebars/sidebars.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/sign-in/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/sign-in/sign-in.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/starter-template/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/sticky-footer-navbar/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/sticky-footer-navbar/sticky-footer-navbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/sticky-footer/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/examples/sticky-footer/sticky-footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/extend/approach.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/extend/icons.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/forms/checks-radios.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/forms/floating-labels.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/forms/form-control.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/forms/input-group.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/forms/layout.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/forms/overview.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/forms/range.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/forms/select.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/forms/validation.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/getting-started/accessibility.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/getting-started/best-practices.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/getting-started/browsers-devices.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/getting-started/contents.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/getting-started/contribute.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/getting-started/download.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/getting-started/introduction.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/getting-started/javascript.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/getting-started/parcel.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/getting-started/rfs.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/getting-started/rtl.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/getting-started/vite.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/getting-started/webpack.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/helpers/clearfix.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/helpers/color-background.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/helpers/colored-links.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/helpers/focus-ring.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/helpers/icon-link.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/helpers/position.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/helpers/ratio.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/helpers/stacks.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/helpers/stretched-link.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/helpers/text-truncation.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/helpers/vertical-rule.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/helpers/visually-hidden.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/layout/breakpoints.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/layout/columns.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/layout/containers.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/layout/css-grid.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/layout/grid.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/layout/gutters.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/layout/utilities.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/layout/z-index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/migration.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/utilities/api.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/utilities/background.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/utilities/borders.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/utilities/colors.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/utilities/display.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/utilities/flex.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/utilities/float.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/utilities/interactions.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/utilities/link.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/utilities/object-fit.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/utilities/opacity.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/utilities/overflow.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/utilities/position.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/utilities/shadows.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/utilities/sizing.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/utilities/spacing.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/utilities/text.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/utilities/vertical-align.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/utilities/visibility.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/5.3/utilities/z-index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/_index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/content/docs/versions.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/data/breakpoints.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/data/colors.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/data/core-team.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/data/docs-versions.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/data/examples.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/data/grays.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/data/icons.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/data/plugins.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/data/sidebar.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/data/theme-colors.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/data/translations.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/_default/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/_default/_markup/render-heading.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/_default/baseof.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/_default/docs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/_default/examples.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/_default/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/_default/redirect.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/_default/single.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/alias.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/ads.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/analytics.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/callouts/danger-async-methods.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/callouts/info-mediaqueries-breakpoints.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/callouts/info-npm-starter.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/callouts/info-prefersreducedmotion.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/callouts/info-sanitizer.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/callouts/warning-color-assistive-technologies.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/callouts/warning-data-bs-title-vs-title.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/callouts/warning-input-support.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/docs-navbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/docs-sidebar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/docs-versions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/favicons.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/guide-footer.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/home/components-utilities.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/home/css-variables.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/home/customize.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/home/get-started.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/home/icons.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/home/masthead.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/home/plugins.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/home/themes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/icons.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/icons/bootstrap-white-fill.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/icons/circle-square.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/icons/droplet-fill.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/icons/github.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/icons/hamburger.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/icons/opencollective.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/icons/twitter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/js-data-attributes.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/redirect.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/scripts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/skippy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/social.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/stylesheet.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/partials/table-content.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/shortcodes/added-in.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/shortcodes/bs-table.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/shortcodes/callout-deprecated-dark-variants.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/shortcodes/callout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/shortcodes/deprecated-in.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/shortcodes/docsref.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/shortcodes/example.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/shortcodes/js-dismiss.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/shortcodes/js-docs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/shortcodes/markdown.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/shortcodes/param.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/shortcodes/partial.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/shortcodes/placeholder.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/shortcodes/scss-docs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/shortcodes/table.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/shortcodes/year.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/layouts/sitemap.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/CNAME" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/brand/bootstrap-logo-black.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/brand/bootstrap-logo-shadow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/brand/bootstrap-logo-white.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/brand/bootstrap-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/brand/bootstrap-social.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/bootstrap-icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/bootstrap-icons@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/bootstrap-themes-collage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/bootstrap-themes-collage@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/bootstrap-themes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/bootstrap-themes@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/album-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/album-rtl@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/album.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/album@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/badges.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/badges@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/blog-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/blog-rtl@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/blog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/blog@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/breadcrumbs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/breadcrumbs@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/buttons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/buttons@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/carousel-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/carousel-rtl@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/carousel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/carousel@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/cheatsheet-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/cheatsheet-rtl@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/cheatsheet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/cheatsheet@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/checkout-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/checkout-rtl@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/checkout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/checkout@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/cover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/cover@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/dashboard-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/dashboard-rtl@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/dashboard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/dashboard@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/dropdowns.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/dropdowns@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/features.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/features@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/footers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/footers@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/grid.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/grid@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/headers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/headers@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/heroes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/heroes@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/jumbotron.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/jumbotron@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/jumbotrons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/jumbotrons@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/list-groups.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/list-groups@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/masonry.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/masonry@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/modals.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/modals@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/navbar-bottom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/navbar-bottom@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/navbar-fixed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/navbar-fixed@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/navbar-static.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/navbar-static@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/navbars-offcanvas.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/navbars-offcanvas@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/navbars.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/navbars@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/offcanvas-navbar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/offcanvas-navbar@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/pricing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/pricing@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/product.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/product@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/sidebars.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/sidebars@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/sign-in.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/sign-in@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/starter-template.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/starter-template@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/sticky-footer-navbar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/sticky-footer-navbar@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/sticky-footer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/examples/sticky-footer@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/favicons/android-chrome-192x192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/favicons/android-chrome-512x512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/favicons/apple-touch-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/favicons/favicon-16x16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/favicons/favicon-32x32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/favicons/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/favicons/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/guides/bootstrap-parcel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/guides/bootstrap-parcel@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/guides/bootstrap-vite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/guides/bootstrap-vite@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/guides/bootstrap-webpack.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/guides/bootstrap-webpack@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/guides/parcel-dev-server-bootstrap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/guides/parcel-dev-server.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/guides/vite-dev-server-bootstrap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/guides/vite-dev-server.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/guides/webpack-dev-server-bootstrap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/guides/webpack-dev-server.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/parcel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/vite.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/img/webpack.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/js/color-modes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/docs/5.3/assets/js/validate-forms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/site/static/sw.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/static/bootstrap-5.3.2/theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/czarny_kot/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vercel.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2Wtf5tjPvjqpCSHqGG1Kq1zWsSI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/revorete/workspace/czarny_kot_project",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.stylelint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/czarny_kot" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Django Server.czarny_kot_project">
+    <configuration name="czarny_kot" type="Python.DjangoServer" factoryName="Django server">
+      <module name="czarny_kot_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="czarny_kot.settings" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/.virtualenvs/czarny_kot_project/bin/python" />
+      <option name="SDK_NAME" value="Python 3.10 (czarny_kot_project)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="127.0.0.1" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="czarny_kot_project" type="Python.DjangoServer" factoryName="Django server">
+      <module name="czarny_kot_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="82ae62d7-b711-498d-9d12-923f4246f6d2" name="Changes" comment="" />
+      <created>1697556622307</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1697556622307</updated>
+      <workItem from="1697556625121" duration="846000" />
+      <workItem from="1697557499302" duration="18364000" />
+      <workItem from="1697706507525" duration="2290000" />
+      <workItem from="1697727246441" duration="6708000" />
+      <workItem from="1697734214282" duration="1305000" />
+    </task>
+    <task id="LOCAL-00001" summary="Projekt Czôrny Kót - na razie szablon strony, pierwsza przymiarka">
+      <option name="closed" value="true" />
+      <created>1697721431043</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697721431043</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Projekt Czôrny Kót - na razie szablon strony, pierwsza przymiarka">
+      <option name="closed" value="true" />
+      <created>1697721737673</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1697721737673</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Projekt Czôrny Kót - na razie szablon strony, pierwsza przymiarka">
+      <option name="closed" value="true" />
+      <created>1697728371311</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697728371311</updated>
+    </task>
+    <task id="LOCAL-00004" summary="setting up for vercel">
+      <option name="closed" value="true" />
+      <created>1697728581307</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1697728581307</updated>
+    </task>
+    <task id="LOCAL-00005" summary="setting up for vercel">
+      <option name="closed" value="true" />
+      <created>1697729511226</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1697729511226</updated>
+    </task>
+    <task id="LOCAL-00006" summary="setting up for vercel">
+      <option name="closed" value="true" />
+      <created>1697730664208</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1697730664208</updated>
+    </task>
+    <task id="LOCAL-00007" summary="setting up for vercel">
+      <option name="closed" value="true" />
+      <created>1697730851787</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1697730851787</updated>
+    </task>
+    <task id="LOCAL-00008" summary="setting up for vercel">
+      <option name="closed" value="true" />
+      <created>1697731615059</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1697731615059</updated>
+    </task>
+    <task id="LOCAL-00009" summary="setting up for vercel">
+      <option name="closed" value="true" />
+      <created>1697731733944</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1697731733944</updated>
+    </task>
+    <task id="LOCAL-00010" summary="setting up for vercel">
+      <option name="closed" value="true" />
+      <created>1697732327749</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1697732327749</updated>
+    </task>
+    <task id="LOCAL-00011" summary="setting up for vercel">
+      <option name="closed" value="true" />
+      <created>1697733120679</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1697733120679</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+    <MESSAGE value="Projekt Czôrny Kót - na razie szablon strony, pierwsza przymiarka" />
+    <MESSAGE value="setting up for vercel" />
+    <option name="LAST_COMMIT_MESSAGE" value="setting up for vercel" />
+  </component>
+</project>
