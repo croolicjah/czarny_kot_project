@@ -77,7 +77,7 @@ TEMPLATES = [
 ]
 
 
-WSGI_APPLICATION = 'czarny_kot.wsgi.application'
+WSGI_APPLICATION = 'czarny_kot.wsgi.app'
 
 
 # Database
