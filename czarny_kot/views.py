@@ -7,8 +7,6 @@ from django.views import View
 from django.utils import timezone
 
 
-
-
 class HomeViews(View):
     def get(self, request):
 

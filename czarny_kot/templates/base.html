@@ -1,4 +1,3 @@
-{#{% load compress %}#}
 {% load static %}
 
 <!doctype html>
@@ -18,9 +17,6 @@
 
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-{#    {% compress css %}#}
-{#      <link type="text/x-scss" href="{% static 'bootstrap-5.3.2/scss/bootstrap.scss' %}" rel="stylesheet" media="screen">#}
-{#    {% endcompress %}#}
 
     <link href="{% static 'bootstrap-5.3.2/dist/css/bootstrap.min.css' %}" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
@@ -165,7 +161,6 @@
 <header data-bs-theme="dark">
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
-        <img src="{% static 'assets/img/logotyp_CzornyKot.svg' %}"  class="img-fluid align-self-" >
 {#      <object data="{% static 'assets/img/logotyp_CzornyKot.svg' %}" width="80" height="80"> </object>#}
       <a class="navbar-brand " href="#">Czôrny Kòt</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -195,52 +190,56 @@
 <main>
 
   <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-{#    <div class="carousel-indicators">#}
-{#      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>#}
-{#      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>#}
-{#      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>#}
-{#    </div>#}
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
     <div class="carousel-inner">
-{#      <div class="carousel-item ">#}
-{#        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>#}
-{#        <div class="container">#}
-{#          <div class="carousel-caption text-start">#}
-{#            <h1>Example headline.</h1>#}
-{#            <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>#}
-{#            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>#}
-{#          </div>#}
-{#        </div>#}
-{#      </div>#}
-{#      <div class="carousel-item">#}
-{#        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>#}
-{#        <div class="container">#}
-{#          <div class="carousel-caption">#}
-{#            <h1>Another example headline.</h1>#}
-{#            <p>Some representative placeholder content for the second slide of the carousel.</p>#}
-{#            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>#}
-{#          </div>#}
-{#        </div>#}
-{#      </div>#}
       <div class="carousel-item active">
 {#        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>#}
         <img src="{% static 'assets/img/marco-kot1.webp' %}"  class="mx-auto img-fluid" alt="Książnica myśli antyautorytarnej Czôrny kòt">
         <div class="">
           <div class="carousel-caption text-end">
-            <div><h1 class="bg-dark marketing bg-gradient align-self-end d-inline-block bg-opacity-25">Książnica myśli antyautorytarnej</h1></div>
+            <div><h1 class="bg-dark bg-gradient align-self-end d-inline-block bg-opacity-25">Książnica myśli antyautorytarnej</h1></div>
             <div><p class="bg-dark bg-gradient d-inline-block bg-opacity-25">Czôrny kòt to biblioteka i czytelnia społeczna działające w Słupsku.</p></div>
             <p><a class="btn btn-lg btn-dark" href="#">Dowiedz się wiecej</a></p>
           </div>
         </div>
       </div>
+
+      <div class="carousel-item">
+        <img src="{% static 'assets/img/czerwonaBluza.webp' %}"  class="mx-auto img-fluid w-100" alt="Książnica myśli antyautorytarnej Czôrny kòt">
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <div><h1 class="bg-dark bg-gradient align-self-end d-inline-block bg-opacity-25">Ty też możesz pomóc</h1></div>
+            <div><p class="bg-dark bg-gradient align-self-end d-inline-block bg-opacity-25">Sądzisz, że jesteśmy potrzebni? Możesz nas wesprzeć lub do nas dołączyć.</p></div>
+            <p><a class="btn btn-lg btn-dark" href="#">Sprawdź, jak pomóc</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item ">
+{#        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>#}
+        <img src="{% static 'assets/img/kuszulkiKo.webp' %}"  class="mx-auto img-fluid w-100" alt="Książnica myśli antyautorytarnej Czôrny kòt">
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <div><h1 class="bg-dark bg-gradient align-self-end d-inline-block bg-opacity-25">Galeria Czôrny Kòt </h1></div>
+            <div><p class="bg-dark bg-gradient d-inline-block bg-opacity-25">Nie tylko książką człowiek żyje. Mamy również galerię. Zapraszamy na wystawy.</p></div>
+            <p><a class="btn btn-lg btn-dark" href="#">Sprawdź</a></p>
+          </div>
+        </div>
+      </div>
+
     </div>
-{#    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">#}
-{#      <span class="carousel-control-prev-icon" aria-hidden="true"></span>#}
-{#      <span class="visually-hidden">Previous</span>#}
-{#    </button>#}
-{#    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">#}
-{#      <span class="carousel-control-next-icon" aria-hidden="true"></span>#}
-{#      <span class="visually-hidden">Next</span>#}
-{#    </button>#}
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Poprzedni</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Następny</span>
+    </button>
   </div>
 
 
@@ -254,24 +253,26 @@
     <div class="row">
       <div class="col-lg-4">
 {#        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>#}
-        <img src="{% static 'assets/img/czarny_kot.png' %}" width='140'   alt="Czarny Kot">
-        <h2 class="fw-normal">Dlaczego Czôrny Kòt</h2>
-        <p>Pod nazwą „Czarny Kot” działało w latach 90. XX w. anarchistyczne centrum społeczno-kulturalne prowadzone przez słupski Kolektyw „Aktywność społeczna”. Nazwa Czôrny kòt wprost nawiązuje do tamtego miejsca, ale zapisana jest w języku kaszubskim. Z jednej strony pokazuje nowy rozdział działań antyautorytarnych, a z drugiej podkreśla ich lokalny charakter.</p>
-        <p><a class="btn btn-dark" href="#">View details &raquo;</a></p>
+        <img src="{% static 'assets/img/megafon.webp' %}" height='140'   alt="Czarny Kot">
+        <h2 class="fw-normal">Megafon</h2>
+        <p>Książnica myśli antyautorytarnej Czôrny kòt startuje już jesienią 2023 roku. Oto nasze plany.</p>
+        <p><a class="btn btn-outline-dark" href="#">Sprawdź &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
 
-        <h2 class="fw-normal">Heading</h2>
-        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
 {#        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>#}
-        <img src="{% static 'assets/img/plakat.png' %}" height="225"  alt="Plakat z XIX wieku">
+        <img src="{% static 'assets/img/skrytka65.webp' %}" class="rounded-circle" height='140'   alt="Czarny Kot">
+        <h2 class="fw-normal">Kontakt</h2>
+        <p>Możesz się z nami kontaktować osobiście, ale też e-mailowo lub tradycyjną pocztą.</p>
+        <p><a class="btn btn-outline-dark" href="#">Sprawdź &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+{#        <svg class="bd-placeholder-img" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>#}
+        <img src="{% static 'assets/img/logotyp_CzornyKot.svg' %}" height="140"  alt="Plakat z XIX wieku">
         <h2 class="fw-normal">Historia czarnego kota</h2>
-        <p>Szacuje się, że czarny kot jest symbolem środowisk antyautorytarnych od ok. 1880 r., niewiele później sięgnęli po niego artyści związani z ruchami społecznymi, zainspirowani niezależną naturą tego zwierzęcia.</p>
-        <p><a class="btn btn-dark" href="#">View details &raquo;</a></p>
+        <p>Pochodzenie symbolu czarnego kota nie jest jasne. Jest jednak kilka intrygujących faktów.</p>
+        <p><a class="btn btn-outline-dark" href="#">Sprawdź &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 
@@ -282,12 +283,12 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h2>
-        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+        <h2 class="featurette-heading fw-normal lh-1">Książnica myśli antyautorytarnej <span class="text-body-secondary">Czôrny kòt </span></h2>
+        <p class="lead">To biblioteka i czytelnia społeczna działające w Słupsku przy ul. Zamkowej 5. Organizujemy tu też debaty, spotkania, pokazy filmów i wystawy. To również miejsce nagrań w ramach projektu historii mówionej i przestrzeń dla niezależnych twórców.</p>
       </div>
       <div class="col-md-5">
-
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+        <img src="{% static 'assets/img/marco-kot-800x800.webp' %}" class="featurette-image img-fluid mx-auto" width='500'  height="auto" alt="Czarny Kot">
+{#        <svg class="bd-placeholder-img bd-placeholder-img-lg " width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>#}
       </div>
     </div>
 
@@ -295,11 +296,11 @@
 
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for yourself.</span></h2>
-        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+        <h2 class="featurette-heading fw-normal lh-1">Ty też możesz nas wesprzeć. <span class="text-body-secondary">To bardzo proste</span></h2>
+        <p class="lead">Sądzisz, że jesteśmy potrzebni i to co robimy jest więcej niż okej? By działać potrzebujemy wsparcia. Możesz nam pomóc materialnie lub nawet do nas dołączyć. Każdy jest mile widziany.</p>
       </div>
       <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+        <img src="{% static 'assets/img/czerwonaBluza_800w.webp' %}" class="featurette-image img-fluid mx-auto" width='500'  height="auto" alt="Przypinka">
       </div>
     </div>
 
@@ -307,11 +308,11 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-body-secondary">Checkmate.</span></h2>
-        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+        <h2 class="featurette-heading fw-normal lh-1">Galeria <span class="text-body-secondary">Czôrny kòt </span></h2>
+        <p class="lead">Nie tylko książką człowiek żyje. Mamy również galerię. Zapraszamy na wystawy. Będziecie mogli podziwiać prace artystów związanych z antyautorytarnymi ruchami społecznymi</p>
       </div>
       <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+        <img src="{% static 'assets/img/kuszulkiKo_Kwadrat.webp' %}" class="featurette-image img-fluid mx-auto" width='500'  height="auto" alt="Przypinka">
       </div>
     </div>
 
