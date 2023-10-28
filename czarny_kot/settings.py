@@ -34,7 +34,7 @@ DEBUG = env('DEBUG')
 
 ALLOWED_HOSTS = ['*', '.czarny_kot.app']
 
-
+CSRF_TRUSTED_ORIGINS = ['https://*.127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'czarny_kot',
-    'compressor',
+    'posts',
 ]
 
 MIDDLEWARE = [

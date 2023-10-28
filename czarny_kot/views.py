@@ -1,16 +1,33 @@
+from operator import itemgetter
+
 from django.core.exceptions import ValidationError
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.views import View
-
-# from .models import Product, Vote
-from django.utils import timezone
+from posts.models import Post, Section
 
 
 class HomeViews(View):
     def get(self, request):
 
-        return render(request, 'base.html', {})
+        posts = Post.objects.all()
+        sections = Section.objects.all()
+
+        list_of_posts = [
+            (section.order, section.name, post, post.edit_date, post.order)
+            for section in sections for post in posts if post.section_id == section.id
+        ]
+
+        posts_on_site = Post.multisort(list_of_posts, ((0, False), (3, True)))
+        carousel_posts = sorted([item for item in posts_on_site if 0 < item[2].order < 4], key=itemgetter(4))
+        dot_posts = sorted([item for item in posts_on_site if 3 < item[2].order < 7], key=itemgetter(4))
+
+        context = {
+            'carousel_posts': carousel_posts,
+            'dot_posts': dot_posts,
+            'section_posts': posts_on_site,
+        }
+        return render(request, 'czarny_kot/base.html', context=context)
 
     def post(self, request):
         return True
