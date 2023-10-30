@@ -38,6 +38,7 @@ CSRF_TRUSTED_ORIGINS = ['https://*.127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -46,6 +47,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'czarny_kot',
     'posts',
+    'tinymce',
+
+
 ]
 
 MIDDLEWARE = [
@@ -133,9 +137,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-COMPRESS_PRECOMPILERS = (
-    ('text/x-scss', 'django_libsass.SassCompiler'),
-)
 
 STATICFILES_FINDERS = [
     "django.contrib.staticfiles.finders.FileSystemFinder",
@@ -147,7 +148,7 @@ STATICFILES_DIRS = [
     (BASE_DIR / "static"),
 ]
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles_build' / "static"
 
 MEDIA_ROOT = BASE_DIR / 'media'
@@ -156,3 +157,56 @@ MEDIA_URL = '/media/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+TINYMCE_JS_URL = "https://cdn.tiny.cloud/1/rm8n6cx413tfiuioakwu8blj5ol9xuvzavqrs6kuzcm9bhpf/tinymce/6/tinymce.min.js"
+
+TINYMCE_COMPRESSOR = False
+
+TINYMCE_DEFAULT_CONFIG = {
+    'theme': 'silver',
+    'branding': False,
+    # 'skin': 'oxide-dark',
+    "height": "320px",
+    "width": "700px",
+
+    "menubar": "file edit view insert format tools table help",
+    "plugins": "advlist autolink lists link image charmap print preview anchor save searchreplace visualblocks code "
+    "fullscreen insertdatetime media table paste code help wordcount spellchecker",
+    "toolbar": " | blocks fontfamily fontsizeselect formatselect | alignleft "
+    "aligncenter alignright alignjustify | italic underline strikethrough | outdent indent |  numlist bullist checklist | forecolor "
+    "backcolor casechange permanentpen formatpainter removeformat | pagebreak | charmap emoticons | "
+    "fullscreen  preview save p rint | insertfile image media pageembed template link anchor | "
+    " | ",
+
+    # 'toolbar2': '''
+    #     visualblocks visualchars |
+    #     charmap hr pagebreak nonbreaking anchor |  code |
+    #     ''',
+
+    'font_formats': '''
+                       Arial=arial,helvetica,sans-serif; 
+                       Arial Black=arial black,avant garde; 
+                       Book Antiqua=book antiqua,palatino; 
+                       Comic Sans MS=comic sans ms,sans-serif; 
+                       Courier New=courier new,courier; 
+                       Georgia=georgia,palatino; 
+                       Helvetica=helvetica; 
+                       Impact=impact,chicago; 
+                       Symbol=symbol; 
+                       Tahoma=tahoma,arial,helvetica,sans-serif; 
+                       Terminal=terminal,monaco; 
+                       Times New Roman=times new roman,times; 
+                       Trebuchet MS=trebuchet ms,geneva; 
+                       Verdana=verdana,geneva; 
+                       Webdings=webdings; 
+                       Wingdings=wingdings,zapf dingbats,
+                   '''
+}
+
+# TINYMCE_SPELLCHECKER = True
+#
+# JAZZMIN_UI_TWEAKS = {
+#
+#     "theme": "lux",
+#     # "dark_mode_theme": "darkly",
+# }

@@ -27,7 +27,7 @@ class HomeViews(View):
             'dot_posts': dot_posts,
             'section_posts': posts_on_site,
         }
-        return render(request, 'czarny_kot/base.html', context=context)
+        return render(request, 'czarny_kot/front-page.html', context=context)
 
     def post(self, request):
         return True

@@ -1,0 +1,139 @@
+{% extends "czarny_kot/base.html" %}
+{% load static %}
+{% block content %}
+  <div id="myCarousel" class="carousel slide carousel-fade mb-6" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner ">
+      {% for  post in carousel_posts %}
+          <div id="carousel-{{ post.2.id }}" class="carousel-item {% if post.2.order == 1 %}active{% endif  %}">
+            <img src="{{ post.2.photo_carousel.url }}"  class="d-block me-0 d-sm-none object-fit-cover" width="100%" height="100%";  alt={{ post.2.feat_title }}>
+              <img src="{{ post.2.photo_carousel.url }}"  class="row--12 me-0 d-none d-sm-block d-md-none object-fit-cover" width="100%" height="100%";  alt={{ post.2.feat_title }}>
+              <img src="{{ post.2.photo_carousel.url }}"  class="mx-auto  d-sm-none d-md-block d-lg-none h-100"  alt={{ post.2.feat_title }}>
+              <img src="{{ post.2.photo_carousel.url }}"  class="mx-auto col-lg-12 d-none d-lg-block d-xl-block h-auto"  alt={{ post.2.feat_title }}>
+
+            <div>
+
+              <div class="carousel-caption text-end pb-lg-5 mb-lg-3 3 d-none d-sm-block">
+                <div><h1 class="bg-dark bg-gradient align-self-end d-inline-block bg-opacity-50">{{ post.2.carousel_title }}</h1></div>
+                <div><p class="bg-dark bg-gradient d-inline-block bg-opacity-50">{{ post.2.lead_carousel_dot }}</p></div>
+                <p><a id="post-{{ post.2.id }}" class="top-btn-collapse btn btn-lg btn-dark" href="#post-{{ post.2.id }}/{{ post.2.carousel_title|slugify }}" aria-label="Go to the post">{{ post.2.button_text }} </a></p>
+              </div>
+            </div>
+          </div>
+      {% endfor %}
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Poprzedni</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Następny</span>
+    </button>
+  </div> <!-- End of carousel -->
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel. We call those elements: Kropki (Dots in english) -->
+    <div class="row">
+      {% for post in  dot_posts %}
+        <div class="col-lg-4">
+          <img src="{% if post.2.photo_dot %}{{ post.2.photo_dot.url }}{% else %}{{ post.2.photo_feat.url }}{% endif %}" height='140' alt={{ post.2.carousel_title }}>
+          <h2 class="fw-normal">{{ post.2.carousel_title }}</h2>
+          <p>{{ post.2.lead_carousel_dot }}</p>
+          <p><a id="post-{{ post.2.id }}" class="top-btn-collapse btn btn-outline-dark" href="#post-{{ post.2.id }}/{{ post.2.carousel_title|slugify }}" aria-label="Go to the post">Sprawdź &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      {% endfor %}
+    </div><!-- /.row -->
+
+    <!-- START THE FEATURETTES, in polish we call them fit-y -->
+    {% for post in section_posts %}
+       {% ifchanged post.2.section_id %}
+         {% if forloop.counter|divisibleby:"2" and post.2.section.order != 100 %}
+            <div class="section-divider pt-5">
+              <div class="featurette-divider line col-1"></div>
+              <div class="h1 col-2 ">{{ post.2.section.name }}</div>
+              <div class="featurette-divider line col-6"></div>
+              <img class="col-2 ps-5 pe-5" src="{{ post.2.section.image.url }}" width=auto height='100' alt="{{ post.2.section.name }}">
+              <div class="featurette-divider line col-1"></div>
+            </div>
+         {% elif post.2.section.order != 100 %}
+            <div class="section-divider pt-5">
+              <div class="featurette-divider line col-1"></div>
+              <img class="col-2 ps-5 pe-5" src="{{ post.2.section.image.url }}" width=auto height='100' alt="{{ post.2.section.name }}">
+              <div class="featurette-divider line col-6"></div>
+              <div class="h1 col-2 ps-3 pe-3 ">{{ post.2.section.name }}</div>
+              <div class="featurette-divider line col-1"></div>
+            </div>
+         {% else %}
+            <hr class="featurette-divider">
+         {% endif %}
+       {% else %}
+         <hr class="featurette-divider">
+       {% endifchanged %}
+
+
+    <div class="row featurette">
+      <div class="" id="post-{{ post.2.id }}/{{ post.2.carousel_title|slugify }}">
+        <img
+           src="{{ post.2.photo_feat.url }}"
+           class="{% cycle 'float-xl-end' 'float-xl-start' %} {% cycle 'ms-5' 'me-5' %} featurette-image img-fluid" width='500'  height="auto"
+           alt="{{ post.2.feat_title}} {{ post.2.grey_fit_title }}">
+
+        <h2 class="featurette-heading fw-normal lh-1">{{ post.2.feat_title}} <span class="text-body-secondary">{{ post.2.grey_fit_title }}</span></h2>
+        <p class="lead">{{ post.2.lead_feat }}</p>
+
+        <div id="collapse-button-{{ post.2.id }}" class="collapse-button wrapper" style="text-align: center">
+          <a role="button" class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapse-{{ post.2.id }}" aria-expanded="false" aria-controls="collapse-{{ post.2.id }}">
+          </a>
+        </div>
+
+        <div class="lead collapse w-auto mt-3 mb-0" id="collapse-{{ post.2.id }}">{{ post.2.content|safe }}</div>
+
+      </div>
+    </div>
+    {% endfor %}
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+{% endblock %}
+
+{% block jQuery %}
+    <script>
+
+      let buttons = document.querySelectorAll('.top-btn-collapse');
+
+      buttons.forEach(function (btn){
+        btn.addEventListener('click', function () {
+          let collapse_number_id = btn.id.slice(5, btn.id.length)
+          let element = document.getElementById('collapse-' + collapse_number_id);
+          let bsCollapse = new bootstrap.Collapse(element, {
+            toggle: false,
+          });
+          if (!element.classList.contains("show")) {
+            bsCollapse.show();
+          }
+        });
+      });
+
+    </script>
+    <!-- Place the first <script> tag in your HTML's <head> -->
+{#    <script src="https://cdn.tiny.cloud/1/rm8n6cx413tfiuioakwu8blj5ol9xuvzavqrs6kuzcm9bhpf/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>#}
+
+    <!-- Place the following <script> and <textarea> tags your HTML's <body> -->
+
+
+{% endblock %}

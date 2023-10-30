@@ -7,6 +7,7 @@ from django.utils import timezone
 class Section(models.Model):
     name = models.CharField(max_length=15, verbose_name='Nazwa')
     order = models.IntegerField(null=True, blank=True, verbose_name='Kolejność')
+    image = models.FileField(upload_to ='sections/', verbose_name='Zdjęcie/ikona sekcji', null=True, blank=True)
 
     def __str__(self):
         return self.name
@@ -35,7 +36,7 @@ class Post(models.Model):
     lead_carousel_dot = models.CharField(max_length=100, verbose_name='Lead do karuzeli i kropki')
     lead_feat = models.CharField(max_length=255, verbose_name='Lead do fit-a', null=True, blank=True)
     content = models.TextField(verbose_name='Treść posta')
-    section = models.ForeignKey(Section, on_delete=models.PROTECT, verbose_name='Sekcja')
+    section = models.ForeignKey(Section, on_delete=models.PROTECT, verbose_name='Sekcja', related_name="sections")
     order = models.IntegerField(verbose_name='Miejsce przypięcia', default=0)
     publication_date = models.DateField(auto_now_add=True, verbose_name='Data publikacji')
     edit_date = models.DateField(default=timezone.now, verbose_name='Data edycji')
