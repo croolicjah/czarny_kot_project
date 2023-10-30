@@ -24,14 +24,11 @@ class Post(models.Model):
         max_length=40, verbose_name='Szara, 2. część tytułu fit-a', null=True, blank=True
     )
     photo_carousel = models.ImageField(
-        upload_to ='img/', verbose_name='Wąskie zdjęcie do karuzeli', null=True, blank=True
+        upload_to ='img/', verbose_name='Wąskie zdjęcie do karuzeli (proporcja 1,78; 1973x1110)', null=True, blank=True
     )
-    photo_carousel_vertical = models.ImageField(
-        upload_to='img/', verbose_name='Pionowe zdjęcie do karuzeli', null=True, blank=True
-    )
-    photo_dot = models.ImageField(upload_to ='img/', verbose_name='Zdjęcie do kropki', null=True, blank=True)
+
     photo_feat = models.ImageField(
-        upload_to ='img/', default='img/kuszulkiKo_Kwadrat.webp', verbose_name='Zdjęcie do fita'
+        upload_to ='img/', default='img/kuszulkiKo_Kwadrat.webp', verbose_name='Zdjęcie do fita (kwadrat)'
     )
     lead_carousel_dot = models.CharField(max_length=100, verbose_name='Lead do karuzeli i kropki')
     lead_feat = models.CharField(max_length=255, verbose_name='Lead do fit-a', null=True, blank=True)

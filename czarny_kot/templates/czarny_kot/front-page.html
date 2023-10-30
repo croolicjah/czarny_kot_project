@@ -10,21 +10,20 @@
 
     <div class="carousel-inner ">
       {% for  post in carousel_posts %}
-          <div id="carousel-{{ post.2.id }}" class="carousel-item {% if post.2.order == 1 %}active{% endif  %}">
-            <img src="{{ post.2.photo_carousel.url }}"  class="d-block me-0 d-sm-none object-fit-cover" width="100%" height="100%";  alt={{ post.2.feat_title }}>
-              <img src="{{ post.2.photo_carousel.url }}"  class="row--12 me-0 d-none d-sm-block d-md-none object-fit-cover" width="100%" height="100%";  alt={{ post.2.feat_title }}>
-              <img src="{{ post.2.photo_carousel.url }}"  class="mx-auto  d-sm-none d-md-block d-lg-none h-100"  alt={{ post.2.feat_title }}>
-              <img src="{{ post.2.photo_carousel.url }}"  class="mx-auto col-lg-12 d-none d-lg-block d-xl-block h-auto"  alt={{ post.2.feat_title }}>
+        <div id="carousel-{{ post.2.id }}" class="carousel-item {% if post.2.order == 1 %}active{% endif  %}">
+          <!-- solution for responsive photo on smaller screen - pass between with > height. on smaller screens height will be bigger.
+          keeping quite good crop. only for screens < 1200px-->
+          <img src="{{ post.2.photo_carousel.url }}"  class="d-block d-xl-none object-fit-cover" width="100%" height="100%";  alt={{ post.2.feat_title }}>
+          <!-- only for screens => 1200-->
+          <img src="{{ post.2.photo_carousel.url }}"  class="mx-auto col-lg-12 d-none d-lg-block d-xl-block h-auto"  alt={{ post.2.feat_title }}>
 
-            <div>
-
-              <div class="carousel-caption text-end pb-lg-5 mb-lg-3 3 d-none d-sm-block">
-                <div><h1 class="bg-dark bg-gradient align-self-end d-inline-block bg-opacity-50">{{ post.2.carousel_title }}</h1></div>
-                <div><p class="bg-dark bg-gradient d-inline-block bg-opacity-50">{{ post.2.lead_carousel_dot }}</p></div>
-                <p><a id="post-{{ post.2.id }}" class="top-btn-collapse btn btn-lg btn-dark" href="#post-{{ post.2.id }}/{{ post.2.carousel_title|slugify }}" aria-label="Go to the post">{{ post.2.button_text }} </a></p>
-              </div>
-            </div>
+          <div class="carousel-caption text-end pb-lg-5 mb-lg-3 3 d-sm-block">
+            <div><h1 class="bg-dark bg-gradient align-self-end d-inline-block bg-opacity-50">{{ post.2.carousel_title }}</h1></div>
+            <div><p class="bg-dark bg-gradient d-inline-block bg-opacity-50">{{ post.2.lead_carousel_dot }}</p></div>
+            <p><a id="post-{{ post.2.id }}" class="top-btn-collapse btn btn-lg btn-dark" href="#post-{{ post.2.id }}/{{ post.2.carousel_title|slugify }}" aria-label="Go to the post">{{ post.2.button_text }} </a></p>
           </div>
+
+        </div>
       {% endfor %}
     </div>
 
@@ -48,7 +47,7 @@
     <div class="row">
       {% for post in  dot_posts %}
         <div class="col-lg-4">
-          <img src="{% if post.2.photo_dot %}{{ post.2.photo_dot.url }}{% else %}{{ post.2.photo_feat.url }}{% endif %}" height='140' alt={{ post.2.carousel_title }}>
+          <img class="rounded-circle" src="{{ post.2.photo_feat.url }}" height='140' alt={{ post.2.carousel_title }}>
           <h2 class="fw-normal">{{ post.2.carousel_title }}</h2>
           <p>{{ post.2.lead_carousel_dot }}</p>
           <p><a id="post-{{ post.2.id }}" class="top-btn-collapse btn btn-outline-dark" href="#post-{{ post.2.id }}/{{ post.2.carousel_title|slugify }}" aria-label="Go to the post">Sprawdź &raquo;</a></p>
@@ -60,51 +59,67 @@
     {% for post in section_posts %}
        {% ifchanged post.2.section_id %}
          {% if forloop.counter|divisibleby:"2" and post.2.section.order != 100 %}
-            <div class="section-divider pt-5">
+            <div class="section-divider justify-content-between align-items-center pb-0 pt-0 pt-0 pb-sm-5 pt-sm-5">
               <div class="featurette-divider line col-1"></div>
-              <div class="h1 col-2 ">{{ post.2.section.name }}</div>
-              <div class="featurette-divider line col-6"></div>
-              <img class="col-2 ps-5 pe-5" src="{{ post.2.section.image.url }}" width=auto height='100' alt="{{ post.2.section.name }}">
-              <div class="featurette-divider line col-1"></div>
+              <div class="h1 col-5 col-sm-4 col-md-4 col-xl-2 ps-sm-3 pe-sm-3"><span class="p-0 mx-auto">{{ post.2.section.name }}</span></div>
+              <div class="featurette-divider line col-1 col-sm-3 col-md-3 col-xl-6"></div>
+              <img class="col-3 col-lg-2 ps-2 pe-2 ps-sm-3 pe-sm-3 ps-md-4 pe-md-4 ps-xl-5 pe-xl-5" src="{{ post.2.section.image.url }}" alt="{{ post.2.section.name }}">
+              <div class="featurette-divider line col-1 "></div>
             </div>
          {% elif post.2.section.order != 100 %}
-            <div class="section-divider pt-5">
+            <div class="section-divider justify-content-between align-items-center mt-1 mb-1 pb-0 pb-0 pt-0  pt-0 pb-sm-5 pt-sm-5">
               <div class="featurette-divider line col-1"></div>
-              <img class="col-2 ps-5 pe-5" src="{{ post.2.section.image.url }}" width=auto height='100' alt="{{ post.2.section.name }}">
-              <div class="featurette-divider line col-6"></div>
-              <div class="h1 col-2 ps-3 pe-3 ">{{ post.2.section.name }}</div>
+              <img class="col-3 col-lg-2 ps-2 pe-2 ps-sm-3 pe-sm3 ps-md-4 pe-md-4 ps-xl-5 pe-xl-5" src="{{ post.2.section.image.url }}" alt="{{ post.2.section.name }}">
+              <div class="featurette-divider line col-1 col-sm-3 col-md-3 col-xl-6"></div>
+              <div class="h1 col-5 col-sm-4 col-md-4 col-xl-2 ps-sm-3 pe-sm-3 ">{{ post.2.section.name }}</div>
               <div class="featurette-divider line col-1"></div>
             </div>
          {% else %}
-            <hr class="featurette-divider">
+            <hr class="featurette-divider mb-4 mt-4 mb-sm-5 mt-sm-5 pb-0 pt-0">
          {% endif %}
        {% else %}
-         <hr class="featurette-divider">
+         <hr class="featurette-divider mb-4 mt-4 mb-sm-5 mt-sm-5">
        {% endifchanged %}
 
 
-    <div class="row featurette">
-      <div class="" id="post-{{ post.2.id }}/{{ post.2.carousel_title|slugify }}">
-        <img
-           src="{{ post.2.photo_feat.url }}"
-           class="{% cycle 'float-xl-end' 'float-xl-start' %} {% cycle 'ms-5' 'me-5' %} featurette-image img-fluid" width='500'  height="auto"
-           alt="{{ post.2.feat_title}} {{ post.2.grey_fit_title }}">
+      <div class="row featurette ">
+        <div class="mobile" id="post-{{ post.2.id }}/{{ post.2.carousel_title|slugify }}">
+          {% if post.2.section.order != 100 %}
+            <!-- Only for screens < 992px (lg)-->
+            <div class="mobile-third"><img
+              src="{{ post.2.photo_feat.url }}"
+              class="{% cycle 'float-end' 'float-start' %} d-md-block d-lg-none featurette-image img-fluid w-100" width='500'  height="auto"
+              alt="{{ post.2.feat_title}} {{ post.2.grey_fit_title }}">
+            </div>
+            <!-- for screens => 992px there is a float of image to right or left -->
+            <div class="mobile-third">
+              <img
+                src="{{ post.2.photo_feat.url }}"
+                class="{% cycle 'float-end' 'float-start' %} {% cycle 'ms-5' 'me-5' %} d-none d-lg-block featurette-image img-fluid" width='500'  height="auto"
+                alt="{{ post.2.feat_title}} {{ post.2.grey_fit_title }}">
+            </div>
 
-        <h2 class="featurette-heading fw-normal lh-1">{{ post.2.feat_title}} <span class="text-body-secondary">{{ post.2.grey_fit_title }}</span></h2>
-        <p class="lead">{{ post.2.lead_feat }}</p>
+            <div class="mobile-first">
+              <h2 class="featurette-heading">{{ post.2.feat_title}} <span class="text-body-secondary">{{ post.2.grey_fit_title }}</span></h2>
+            </div>
+            <div class="mobile-second">  <p class="lead">{{ post.2.lead_feat }}</p>
 
-        <div id="collapse-button-{{ post.2.id }}" class="collapse-button wrapper" style="text-align: center">
-          <a role="button" class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapse-{{ post.2.id }}" aria-expanded="false" aria-controls="collapse-{{ post.2.id }}">
-          </a>
+              <!-- fixing position of button for lg screen-->
+              <div id="collapse-button-{{ post.2.id }}" class="mb-0 flex-lg-row d-lg-flex justify-content-center collapse-button wrapper col-lg-4 col-xl-auto" >
+                <a role="button" class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapse-{{ post.2.id }}" aria-expanded="false" aria-controls="collapse-{{ post.2.id }}">
+                </a>
+              </div>
+
+              <div class="lead collapse w-auto pt-3 mb-0" id="collapse-{{ post.2.id }}">{{ post.2.content|safe }}</div>
+            </div>
+          {% else %}
+            <div class="lead w-auto pt-3 mb-0">{{ post.2.content|safe }}</div>
+          {% endif %}
         </div>
-
-        <div class="lead collapse w-auto mt-3 mb-0" id="collapse-{{ post.2.id }}">{{ post.2.content|safe }}</div>
-
-      </div>
     </div>
     {% endfor %}
 
-    <hr class="featurette-divider">
+    <hr class="featurette-divider mt-5 mb-4">
 
     <!-- /END THE FEATURETTES -->
 
