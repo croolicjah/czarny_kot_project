@@ -158,7 +158,7 @@ MEDIA_URL = '/media/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-TINYMCE_JS_URL = "https://cdn.tiny.cloud/1/rm8n6cx413tfiuioakwu8blj5ol9xuvzavqrs6kuzcm9bhpf/tinymce/6/tinymce.min.js"
+TINYMCE_JS_URL = env('TINYMCE_JS_URL')
 
 TINYMCE_COMPRESSOR = False
 
