@@ -34,9 +34,11 @@ DEBUG = env('DEBUG')
 
 ALLOWED_HOSTS = ['*', '.czarny_kot.app']
 
-CSRF_TRUSTED_ORIGINS = ['https://*.127.0.0.1']
-# Application definition
+CSRF_TRUSTED_ORIGINS = ['https://*.127.0.0.1', 'https://czornykot.pl']
 
+SECURE_REFERRER_POLICY = 'origin'
+
+# Application definition
 INSTALLED_APPS = [
     'jazzmin',
     'django.contrib.admin',
