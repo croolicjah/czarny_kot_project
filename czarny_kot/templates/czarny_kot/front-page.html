@@ -59,12 +59,12 @@
     {% for post in section_posts %}
        {% ifchanged post.2.section_id %}
          {% if forloop.counter|divisibleby:"2" and post.2.section.order != 100 %}
-            <div class="section-divider justify-content-between align-items-center pb-0 pt-0 pt-0 pb-sm-5 pt-sm-5">
+            <div class="section-divider row justify-content-between align-items-center pb-0 pt-0 pt-0 pb-sm-5 pt-sm-5">
               <div class="featurette-divider line col-1"></div>
               <div class="h1 col-5 col-sm-4 col-md-4 col-xl-2 ps-sm-3 pe-sm-3"><span class="p-0 mx-auto">{{ post.2.section.name }}</span></div>
               <div class="featurette-divider line col-1 col-sm-3 col-md-3 col-xl-6"></div>
               <img class="col-3 col-lg-2 ps-2 pe-2 ps-sm-3 pe-sm-3 ps-md-4 pe-md-4 ps-xl-5 pe-xl-5" src="{{ post.2.section.image.url }}" alt="{{ post.2.section.name }}">
-              <div class="featurette-divider line col-1 "></div>
+              <div class="featurette-divider liline col-1 "></div>
             </div>
          {% elif post.2.section.order != 100 %}
             <div class="section-divider justify-content-between align-items-center mt-1 mb-1 pb-0 pb-0 pt-0  pt-0 pb-sm-5 pt-sm-5">
