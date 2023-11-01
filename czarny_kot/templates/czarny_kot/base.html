@@ -24,7 +24,7 @@
     <header data-bs-theme="dark">
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand " href="#">Czôrny Kòt</a>
+          <a class="navbar-brand " aria-current="page" href="../">Czôrny Kòt</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -33,7 +33,7 @@
               {% nav_links_fill as nav_links %}
               {% for item in nav_links%} %}
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="{{ item.0 }}">{{ item.1 }}</a>
+                  <a class="nav-link" href="{{ item.0 }}">{{ item.1 }}</a>
                 </li>
               {% endfor %}
             </ul>
