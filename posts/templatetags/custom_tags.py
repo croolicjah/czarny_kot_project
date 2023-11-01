@@ -21,5 +21,3 @@ def get_post_section_links(post_section_value=6, name='Kontakt'):
     new_item = '#post-' + str(lookup_post.id) + '/' + slugify(lookup_post.carousel_title), name
     navbar_menu.append(new_item)
     return navbar_menu
-
-
