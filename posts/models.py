@@ -26,10 +26,7 @@ class Post(models.Model):
     photo_carousel = models.ImageField(
         upload_to ='img/', verbose_name='Wąskie zdjęcie do karuzeli (proporcja 1,78; 1973x1110)', null=True, blank=True
     )
-
-    photo_feat = models.ImageField(
-        upload_to ='img/', default='img/kuszulkiKo_Kwadrat.webp', verbose_name='Zdjęcie do fita (kwadrat)'
-    )
+    photo_feat = models.ImageField(upload_to ='img/', verbose_name='Zdjęcie do fita (kwadrat)')
     lead_carousel_dot = models.CharField(max_length=100, verbose_name='Lead do karuzeli i kropki')
     lead_feat = models.CharField(max_length=255, verbose_name='Lead do fit-a', null=True, blank=True)
     content = models.TextField(verbose_name='Treść posta')
