@@ -1,11 +1,12 @@
 from django import template
 from django.utils.text import slugify
 from posts.models import Post, Section
-register = template.Library()
 
+register = template.Library()
+register.simple_tag(name="get_link")
 
 # tag returns section  link if only value argument added or post if order False (get post by id)
-@register.simple_tag
+@register.simple_tag(name="get_link")
 def get_post_section_link(value, order='True'):
     if order:
         lookup_section = Section.objects.get(order=value)
