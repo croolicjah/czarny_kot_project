@@ -84,7 +84,7 @@
 
       <div class="row featurette ">
         <div class="mobile" id="post-{{ post.2.id }}/{{ post.2.carousel_title|slugify }}">
-          {% if post.2.section.order < 100 %}
+          {% if post.2.section.order < 100 and post.2.section.order > 0 %}
             <!-- Only for screens < 992px (lg)-->
             <div class="mobile-third"><img
               src="{{ post.2.photo_feat.url }}"
@@ -112,7 +112,7 @@
               </div>
               <div class="lead collapse w-auto pt-3 mb-0" id="collapse-{{ post.2.id }}">{{ post.2.content|safe }}</div>
             </div>
-          {% else %}
+          {% elif post.2.section.order == 100 %}
             <div class="lead w-auto pt-3 mb-0">{{ post.2.content|safe }}</div>
           {% endif %}
         </div>
