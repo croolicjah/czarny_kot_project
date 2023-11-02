@@ -1,3 +1,28 @@
+.lead a:link {
+  color: #333 !important;
+}
+
+/* visited link */
+.lead a:visited {
+  color: #adb5bd;
+}
+
+/* mouse over link */
+.lead a:hover {
+  color: #6c757d;
+}
+
+/* selected link */
+.lead a:active {
+  color: #e9ecef;
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
 .section-divider {
   display:flex;
   /*position: relative;*/
@@ -6,6 +31,7 @@
   align-items: center;
 
 }
+
 .section-divider .line {
   height: 1px;
   flex: 1;
@@ -15,31 +41,12 @@
   border-top: var(--bs-border-width) solid;
   opacity: .25;
 }
+
 .section-divider .h1 {
-  /*position: absolute;*/
-  /*top: -1.6rem;*/
-
-  /*padding: 0 10px;*/
   text-align: center;
-  /*font-weight: bold;*/
-  /*font-size: 16px;*/
-}
-/*hr .section-divider:before,*/
-/*hr .section-divider:after {*/
-/*    content: "";*/
-/*    flex: 1 1;*/
-/*    border-bottom: 2px solid #000;*/
-/*    margin: auto;*/
-/*}*/
-
-.img-for-divider {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
 }
 
 .collapsing {
-
   position: relative;
   height: 0;
   overflow: hidden;
@@ -50,12 +57,13 @@
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
 }
+
 .collapse-button {
   text-align: center;
 }
+
 .collapse-button a.collapsed:after  {
     content: 'Rozwiń';
-
 }
 
 .collapse-button a:not(.collapsed):after {
@@ -63,13 +71,12 @@
 }
 
 .collapse-button .wrapper{
-
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.collapse-button a{
+.collapse-button a {
   display: inline-block;
   font-size: 1rem;
   font-family: sans-serif;
@@ -122,11 +129,7 @@
         }
 }
 
-.b-example-vr {
-  flex-shrink: 0;
-  width: 1.5rem;
-  height: 100vh;
-}
+
 
 .bi {
   vertical-align: -.125em;

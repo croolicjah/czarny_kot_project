@@ -7,7 +7,7 @@
   "theme_color": "#ffffff",
   "description": "Eventy, inf Książnicy myśli antyautorytarnej Czôrny Kòt",
   "icons": [
-    { "src": "/logotyp_czk-192x192.png", "type": "image/png", "sizes": "192x192" },
-    { "src": "/logotyp_czarny_kot512x512.png", "type": "image/png", "sizes": "512x512" }
+    { "src": "logotyp_czk-192x192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "logotyp_czarny_kot512x512.png", "type": "image/png", "sizes": "512x512" }
   ]
 }
