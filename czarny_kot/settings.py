@@ -211,4 +211,5 @@ TINYMCE_DEFAULT_CONFIG = {
 #
 #     "theme": "lux",
 #     # "dark_mode_theme": "darkly",
+
 # }
