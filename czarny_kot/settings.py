@@ -147,11 +147,13 @@ STATICFILES_FINDERS = [
 ]
 STATICFILES_DIRS = [
     # ...
-    (BASE_DIR / "static"),
+
 ]
 
 STATIC_URL = '/static/'
-STATIC_ROOT = '/var/task/ static'
+STATIC_ROOT = BASE_DIR / "static"
+
+    # '/var/task/ static'
 
 MEDIA_ROOT = BASE_DIR / 'media'
 MEDIA_URL = '/var/task/media/'
