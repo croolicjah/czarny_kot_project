@@ -5,3 +5,5 @@
 /czarny_kot/__pycache__/
 /.env
 /unused/
+/czarny_kot/static/
+/posts/static/

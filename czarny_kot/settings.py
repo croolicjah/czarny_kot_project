@@ -50,8 +50,7 @@ INSTALLED_APPS = [
     'czarny_kot',
     'posts',
     'tinymce',
-
-
+    # 'django_imgur',
 ]
 
 MIDDLEWARE = [
@@ -147,19 +146,22 @@ STATICFILES_FINDERS = [
 ]
 STATICFILES_DIRS = [
     # ...
-
 ]
 
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / "static"
+STATIC_ROOT = BASE_DIR / 'static'
 
-    # '/var/task/ static'
+# MEDIA_ROOT = BASE_DIR / '/czarnykotPL/'
+# MEDIA_URL = '/media/'
 
 MEDIA_ROOT = BASE_DIR / 'media'
-MEDIA_URL = '/var/task/media/'
+MEDIA_URL = '/media/'
+
+# MEDIA_URL_1 = '/czarnykotPL/'
+# MEDIA_ROOT_1 = os.path.join(BASE_DIR, 'czarnykotPL')
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
-
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 TINYMCE_JS_URL = env('TINYMCE_JS_URL')
@@ -215,3 +217,33 @@ TINYMCE_DEFAULT_CONFIG = {
 #     # "dark_mode_theme": "darkly",
 
 # }
+
+# Imgur API access
+
+
+STORAGES = {
+    "default": {
+        "BACKEND": "django.core.files.storage.FileSystemStorage",
+    },
+    "staticfiles": {
+        "BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage",
+    },
+
+    "imgur_storage": {
+        "BACKEND": "django.core.files.storage.FileSystemStorage",
+        "OPTIONS": {
+            "base_url": "https://imgur.com/",
+            "location": "/",
+            'CLIENT_ID': env("IMGUR_CONSUMER_ID"),
+            'CLIENT_SECRET': env("IMGUR_CONSUMER_SECRET"),
+            'CLIENT_USERNAME': env("IMGUR_USERNAME"),
+            'ACCESS_TOKEN': env("IMGUR_ACCESS_TOKEN"),
+            'REFRESH_REFRESH': env("IMGUR_ACCESS_TOKEN_REFRESH"),
+        },
+    },
+}
+# IMGUR_CONSUMER_ID: env("IMGUR_CONSUMER_ID")
+# IMGUR_CONSUMER_SECRET: env("IMGUR_CONSUMER_SECRET")
+# IMGUR_USERNAME: env("IMGUR_USERNAME")
+# IMGUR_ACCESS_TOKEN: env("IMGUR_ACCESS_TOKEN")
+# IMGUR_ACCESS_TOKEN_REFRESH: env("IMGUR_ACCESS_TOKEN_REFRESH")
