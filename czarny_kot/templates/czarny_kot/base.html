@@ -1,9 +1,9 @@
 {% load static %}
 {% load custom_tags %}
 <!doctype html>
-<html lang="en" data-bs-theme="auto">
+<html lang="pl" data-bs-theme="light">
   <head>
-    <script src="{% static 'czarny_kot/bootstrap-5.3.2/js/dist/color-modes.js' %}"></script>
+{#    <script src="{% static 'czarny_kot/bootstrap-5.3.2/js/dist/color-modes.js' %}"></script>#}
     <!-- Place the following <script> and <textarea> tags your HTML's <body> -->
 
     <meta charset="utf-8">
@@ -37,7 +37,7 @@
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
               {% nav_links_fill as nav_links %}
-              {% for item in nav_links%} %}
+              {% for item in nav_links %}
                 <li class="nav-item">
                   <a class="nav-link" href="{{ item.0 }}">{{ item.1 }}</a>
                 </li>
