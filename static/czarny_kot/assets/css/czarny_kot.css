@@ -1,3 +1,7 @@
+:root {
+  color-scheme: only light;
+}
+
 .lead a:link {
   color: #333 !important;
 }

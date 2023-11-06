@@ -1,18 +1,20 @@
 from operator import itemgetter
 
+from django.core.files.storage import storages
 from django.db import models
 from django.utils import timezone
-from czarny_kot.imgur_storage import ImgurStorage
-
-
-STORAGE = ImgurStorage()
+#
+# #
+# #
+# STORAGE = ImgurStorage()
+STORAGE = storages['imgur']
 
 
 class Section(models.Model):
     name = models.CharField(max_length=15, verbose_name='Nazwa')
     order = models.IntegerField(null=True, blank=True, verbose_name='Kolejność')
-    image = models.FileField(upload_to ='sections/', verbose_name='Zdjęcie/ikona sekcji', null=True, blank=True)
-
+    image = models.FileField(upload_to='sections/', verbose_name='Zdjęcie/ikona sekcji', null=True, blank=True)
+    # image_imgur = models.FileField(upload_to='CzornyKotPL', storage=STORAGE, verbose_name='Zdjęcie/ikona sekcji', null=True, blank=True)
     def __str__(self):
         return self.name
 
@@ -25,20 +27,20 @@ class Post(models.Model):
     carousel_title = models.CharField(max_length=45, verbose_name='Tytuł karuzeli i kropki')
     feat_title = models.CharField(max_length=40,  verbose_name='Tytuł fit-a')
     grey_fit_title = models.CharField(
-        max_length=40, verbose_name='Szara, 2. część tytułu fit-a', null=True, blank=True
+        max_length=40, verbose_name='Szara część tytułu', null=True, blank=True
     )
 
     photo_carousel = models.ImageField(
-        upload_to='img/', verbose_name='Niskie zdjęcie karuzeli (proporcja 1,78; 1973x1110)', null=True, blank=True
+        upload_to='img/', verbose_name='Niskie do karuzeli (proporcja 1,78; 1973x1110)', null=True, blank=True
     )
     photo_feat = models.ImageField(upload_to='img/', verbose_name='Zdjęcie fita (kwadrat)', null=True, blank=True)
     photo_carousel_imgur = models.ImageField(
-        upload_to='CzornyKotPL', storage=STORAGE, verbose_name='Niskie zdjęcie karuzeli',
+        upload_to='CzornyKotPL', storage=STORAGE, verbose_name='Niskie do karuzeli',
         null=True, blank=True,
         help_text='Proporcja: 1973x1110'
     )
     photo_feat_imgur = models.ImageField(
-        upload_to='CzornyKotPL', storage=STORAGE, verbose_name='Zdjęcie fita i kropki', null=True, blank=True,
+        upload_to='CzornyKotPL', storage=STORAGE, verbose_name='Do fita i kropki', null=True, blank=True,
         help_text='Proporcja: kwadrat'
     )
 
