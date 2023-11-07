@@ -3,9 +3,9 @@
 <!doctype html>
 <html lang="pl" data-bs-theme="light">
   <head>
-    {% include 'components/google_analitycs.html' %}
+{#    {% include 'components/google_analitycs.html' %}#}
     {# <script src="{% static 'czarny_kot/bootstrap-5.3.2/js/dist/color-modes.js' %}"></script> #}
-
+    <script async defer src="https://nocookieanalytics.com/latest.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Wydarzenia, eventy, informacje Książnicy myśli antyautorytarnej i galerii Czôrny Kòt.">
@@ -67,6 +67,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
+{#    {% include 'components/cookie_modal.html' %}#}
+    {% block javascript %}{% endblock %}
     {% block jQuery %}{% endblock %}
 
   </body>
