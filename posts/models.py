@@ -13,8 +13,8 @@ STORAGE = storages['imgur']
 class Section(models.Model):
     name = models.CharField(max_length=15, verbose_name='Nazwa')
     order = models.IntegerField(null=True, blank=True, verbose_name='Kolejność')
-    image = models.FileField(upload_to='sections/', verbose_name='Zdjęcie/ikona sekcji', null=True, blank=True)
-    # image_imgur = models.FileField(upload_to='CzornyKotPL', storage=STORAGE, verbose_name='Zdjęcie/ikona sekcji', null=True, blank=True)
+    image = models.FileField(upload_to='CzornyKotPL', storage=STORAGE, verbose_name='Zdjęcie/ikona sekcji', null=True, blank=True)
+
     def __str__(self):
         return self.name
 

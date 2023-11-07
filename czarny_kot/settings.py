@@ -322,28 +322,31 @@ JAZZMIN_SETTINGS = {
     "hide_models": [],
 
     # List of apps (and/or models) to base side menu ordering off of (does not need to contain all apps/models)
-    "order_with_respect_to": ["posts", "posts.post", "post.session", "auth"],
+    "order_with_respect_to": ["posts", "posts.post", "post.session", "custom_links", "auth"],
 
     # Custom links to append to app groups, keyed on app name
     # "custom_links": {
-    #     "confluence": [{
-    #         "name": "Confluence",
-    #         "url": "",
+    #     "posts": [
+    #         {
+    #             "name": "Confluence",
+    #             "url": "https://pomerio.atlassian.net/wiki/spaces/CK/pages/786504/Strona+www+CK",
+    #             "icon": "fas fa-comments",
+    #             # "permissions": ["books.view_book"]
+    #         },
+    #         {
+    #         "name": "Trello",
+    #         "url": "make_messages",
+    #         "icon": "fa-brands fa-trello",
+    #         # "permissions": ["books.view_book"]
+    #         },
+    #     ],
+    #     "Trello": [],
+    #     "Imgur": [{
+    #         "name": "Imgur",
+    #         "url": "make_messages",
     #         "icon": "fas fa-comments",
     #         # "permissions": ["books.view_book"]
-    #     }],
-        # "Trello": [{
-        #     "name": "Make Messages",
-        #     "url": "make_messages",
-        #     "icon": "fas fa-comments",
-        #     "permissions": ["books.view_book"]
-        # }],
-        # "Imgur": [{
-        #     "name": "Make Messages",
-        #     "url": "make_messages",
-        #     "icon": "fas fa-comments",
-        #     "permissions": ["books.view_book"]
-        # }]
+    #     }]
     # },
 
     # Custom icons for side menu apps/models See
@@ -354,6 +357,7 @@ JAZZMIN_SETTINGS = {
         "auth": "fas fa-users-cog",
         "auth.user": "fas fa-user",
         "auth.Group": "fas fa-users",
+        "Trello": "fa-brands fa-trello",
     },
     # # Icons that are used when one is not manually specified
     "default_icon_parents": "fas fa-chevron-circle-right",
@@ -363,7 +367,7 @@ JAZZMIN_SETTINGS = {
     # Related Modal #
     #################
     # Use modals instead of popups
-    "related_modal_active": False,
+    "related_modal_active": True,
     #
     # #############
     # # UI Tweaks #
