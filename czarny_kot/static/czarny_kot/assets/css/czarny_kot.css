@@ -1,9 +1,13 @@
+/*main {*/
+/*  background-image: url("../img/tloCzK.png") !important;*/
+/*  background-size: contain;*/
+/*}*/
 :root {
   color-scheme: only light;
 }
 
 .lead a:link {
-  color: #333 !important;
+  color: #333333 !important;
 }
 
 /* visited link */
@@ -13,7 +17,7 @@
 
 /* mouse over link */
 .lead a:hover {
-  color: #6c757d;
+  color: #58626a;
 }
 
 /* selected link */
