@@ -174,7 +174,7 @@ TINYMCE_DEFAULT_CONFIG = {
     "toolbar": " blocks fontsizeselect formatselect | alignleft "
     "aligncenter alignright | bold italic underline | outdent indent, | numlist bullist checklist |"
     " forecolor backcolor casechange permanentpen formatpainter removeformat | pagebreak | charmap emoticons | insertfile image media link anchor | fontfamily "
-    " | fullscreen  preview |",
+    " | fullscreen  preview | code",
 
     # 'toolbar2': '''
     #     visualblocks visualchars |
