@@ -1,19 +1,36 @@
+/*main {*/
+/*  background-image: url("../img/tloCzK.png") !important;*/
+/*  background-size: contain;*/
+/*}*/
+.overlay-it img {
+  -webkit-transition: .9s ease-in-out;
+  transition: .9s ease-in-out;
+}
+
+.overlay-it img:hover {
+    /*background: #0866ff;*/
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+
+    transform: rotate(360deg);
+}
+
 :root {
   color-scheme: only light;
 }
 
 .lead a:link {
-  color: #333 !important;
+  color: #333333 !important;
 }
 
 /* visited link */
 .lead a:visited {
-  color: #adb5bd;
+  color: #6c757d;;
 }
 
 /* mouse over link */
 .lead a:hover {
-  color: #6c757d;
+  color: #495057;
 }
 
 /* selected link */
