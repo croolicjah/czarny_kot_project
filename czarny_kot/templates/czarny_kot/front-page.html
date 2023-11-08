@@ -20,7 +20,11 @@
           <div class="carousel-caption text-end pb-lg-5 mb-lg-3 3 d-sm-block">
             <div><h1 class="bg-dark bg-gradient align-self-end d-inline-block bg-opacity-50">{{ post.2.carousel_title }}</h1></div>
             <div><p class="bg-dark bg-gradient d-inline-block bg-opacity-50">{{ post.2.lead_carousel_dot }}</p></div>
-            <p><a id="post-{{ post.2.id }}" class="top-btn-collapse btn btn-lg btn-dark" href="#post-{{ post.2.id }}/{{ post.2.carousel_title|slugify }}" aria-label="Go to the post">{{ post.2.button_text }} </a></p>
+            <p>
+              <a id="post-{{ post.2.id }}" data-lta-event="karuzela-{{ post.2.carousel_title|slugify }}"
+                class="top-btn-collapse btn btn-lg btn-dark" href="#post-{{ post.2.id }}/{{ post.2.carousel_title|slugify }}"
+                aria-label="Go to the post">{{ post.2.button_text }}</a>
+            </p>
           </div>
 
         </div>
@@ -50,7 +54,10 @@
           <img class="rounded-circle" src="{{ post.2.photo_feat_imgur.url }}" referrerpolicy="no-referrer" height='140' alt={{ post.2.carousel_title }}>
           <h2 class="fw-normal">{{ post.2.carousel_title }}</h2>
           <p>{{ post.2.lead_carousel_dot }}</p>
-          <p><a id="dots-{{ post.2.id }}" class="top-btn-collapse btn btn-outline-dark" href="#post-{{ post.2.id }}/{{ post.2.carousel_title|slugify }}" aria-label="Go to the post">Sprawdź &raquo;</a></p>
+          <p>
+            <a id="dots-{{ post.2.id }}" class="top-btn-collapse btn btn-outline-dark" data-lta-event="kropka-{{ post.2.carousel_title|slugify }}"
+            href="#post-{{ post.2.id }}/{{ post.2.carousel_title|slugify }}" aria-label="Go to the post">Sprawdź &raquo;</a>
+          </p>
         </div><!-- /.col-lg-4 -->
       {% endfor %}
     </div><!-- /.row -->
@@ -109,7 +116,7 @@
               <p class="lead">{{ post.2.lead_feat }}</p>
               <!-- fixing position of button for lg screen-->
               <div id="collapse-button-{{ post.2.id }}" class="mb-0 flex-lg-row d-lg-flex justify-content-center collapse-button wrapper col-lg-4 col-xl-auto" >
-                <a role="button" class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapse-{{ post.2.id }}" aria-expanded="false" aria-controls="collapse-{{ post.2.id }}">
+                <a role="button" data-lta-event="rozwin-{{ post.2.carousel_title|slugify }} class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapse-{{ post.2.id }}" aria-expanded="false" aria-controls="collapse-{{ post.2.id }}">
                 </a>
               </div>
               <div class="lead collapse w-auto pt-3 mb-0" id="collapse-{{ post.2.id }}">{{ post.2.content|safe }}</div>
