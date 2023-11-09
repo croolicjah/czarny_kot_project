@@ -3,8 +3,8 @@
 /*  background-size: contain;*/
 /*}*/
 .lead iframe {
-  width: 75% !important;
-  aspect-ratio: 16/9 !important;
+  width: 75%;
+  aspect-ratio: 16/9;
 }
 
 .overlay-it img {
