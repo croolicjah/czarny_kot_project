@@ -3,8 +3,8 @@
 /*  background-size: contain;*/
 /*}*/
 .lead iframe {
-  width: 90% ;
-  aspect-ratio: 16/9 ;
+  width: 75%;
+  aspect-ratio: 16/9;
 }
 
 .overlay-it img {
@@ -129,30 +129,32 @@
 }
 
 @media (max-width: 991px) {
-   .mobile {
-     display: flex;
-     flex-direction: column;
+  .lead iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+  }
+  .mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile-second {
+    display: block;
+    order: 2;
+    margin-bottom: 1.5rem;
+  }
+
+  .mobile-first {
+    /*display: table-header-group;*/
+    order: 1;
+    font-size: larger;
+    margin-bottom: 0.8rem;
+  }
+
+  .mobile-third {
+    /*display: table;*/
+    display: block;
+    order: 3;
    }
-   .mobile-second {
-            display: block;
-            order: 2;
-     margin-bottom: 1.5rem;
-        }
-
-   .mobile-first {
-            /*display: table-header-group;*/
-            order: 1;
-            font-size: larger;
-            margin-bottom: 0.8rem;
-
-        }
-
-   .mobile-third {
-            /*display: table;*/
-     display: block;
-     order: 3;
-
-        }
 }
 
 
