@@ -50,6 +50,9 @@ class PostAdmin(admin.ModelAdmin):
     #     "photo_feat_imgur": "(Proporcja: kwadrat)",
     #     "photo_carousel_imgur": 'proporcja: 1973x1110',
     # }
+    # widgets = {
+    #     'text': TinyMCE(mce_attrs={'content_css': ["", ]}),
+    # }
     formfield_overrides = {
         models.TextField: {'widget': TinyMCE()}
     }
