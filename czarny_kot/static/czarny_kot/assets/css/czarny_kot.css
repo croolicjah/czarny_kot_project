@@ -3,7 +3,7 @@
 /*  background-size: contain;*/
 /*}*/
 .lead iframe {
-  width: 100%;
+  width: 75%;
   aspect-ratio: 16/9;
 }
 
