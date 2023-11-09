@@ -2,10 +2,10 @@
 /*  background-image: url("../img/tloCzK.png") !important;*/
 /*  background-size: contain;*/
 /*}*/
-/*.lead iframe {*/
-/*  width: 75%;*/
-/*  aspect-ratio: 16/9;*/
-/*}*/
+.lead iframe {
+  width: 75% !important;
+  aspect-ratio: 16/9 !important;
+}
 
 .overlay-it img {
   -webkit-transition: .9s ease-in-out;
