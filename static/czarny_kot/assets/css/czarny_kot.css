@@ -2,6 +2,11 @@
 /*  background-image: url("../img/tloCzK.png") !important;*/
 /*  background-size: contain;*/
 /*}*/
+.lead iframe {
+  width: 75% ;
+  aspect-ratio: 16/9 ;
+}
+
 .overlay-it img {
   -webkit-transition: .9s ease-in-out;
   transition: .9s ease-in-out;
