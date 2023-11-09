@@ -2,6 +2,11 @@
 /*  background-image: url("../img/tloCzK.png") !important;*/
 /*  background-size: contain;*/
 /*}*/
+.lead iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
 .overlay-it img {
   -webkit-transition: .9s ease-in-out;
   transition: .9s ease-in-out;
@@ -25,12 +30,12 @@
 
 /* visited link */
 .lead a:visited {
-  color: #adb5bd;
+  color: #6c757d;;
 }
 
 /* mouse over link */
 .lead a:hover {
-  color: #58626a;
+  color: #495057;
 }
 
 /* selected link */
