@@ -36,7 +36,7 @@ ALLOWED_HOSTS = ['*', '.czarny_kot.app']
 
 CSRF_TRUSTED_ORIGINS = ['https://*.127.0.0.1', 'https://czornykot.pl']
 
-SECURE_REFERRER_POLICY = 'origin'
+# SECURE_REFERRER_POLICY = 'origin'
 
 # Application definition
 INSTALLED_APPS = [
@@ -147,7 +147,7 @@ STATICFILES_DIRS = [
     # ...
 ]
 
-STATIC_URL = '/static/'
+STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'static'
 
 MEDIA_ROOT = BASE_DIR / 'media'
@@ -157,48 +157,33 @@ MEDIA_URL = '/media/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-TINYMCE_JS_URL = env('TINYMCE_JS_URL')
-
+# TINYMCE_JS_URL = env('TINYMCE_JS_URL')
+TINYMCE_JS_URL = "czarny_kot/tinymce/tinymce.min.js"
 TINYMCE_COMPRESSOR = False
 
 TINYMCE_DEFAULT_CONFIG = {
     'theme': 'silver',
     'branding': False,
     # 'skin': 'oxide-dark',
-    "height": "400px",
+    "height": "800px",
     "width": "700px",
 
     "menubar": "file edit view insert format tools table help",
-    "plugins": "advlist autolink lists link image charmap print preview anchor searchreplace visualblocks code "
-    "fullscreen insertdatetime media table paste code help wordcount spellchecker",
-    "toolbar": " blocks fontsizeselect formatselect | alignleft "
-    "aligncenter alignright | bold italic underline | outdent indent, | numlist bullist checklist |"
-    " forecolor backcolor casechange permanentpen formatpainter removeformat | pagebreak | charmap emoticons | insertfile image media link anchor | fontfamily "
+    "plugins": "advlist anchor autoresize autosave autolink lists fullscreen codesample directionality "
+               "link image media charmap importcss preview anchor searchreplace visualblocks code "
+               "emoticons nonbreaking pagebreak quickbars save table template visualchars wordcount "
+    "fullscreen insertdatetime media table code help",
+    "toolbar1": " blocks fontsizeselect formatselect | alignleft "
+    "aligncenter alignright | bold italic underline | outdent indent | numlist bullist checklist |",
+    'toolbar2': " forecolor backcolor casechange permanentpen formatpainter removeformat | pagebreak | charmap emoticons | insertfile image media link anchor | fontfamily "
     " | fullscreen  preview | code",
 
-    # 'toolbar2': '''
-    #     visualblocks visualchars |
-    #     charmap hr pagebreak nonbreaking anchor |  code |
-    #     ''',
 
-    'font_formats': '''
-                       Arial=arial,helvetica,sans-serif; 
-                       Arial Black=arial black,avant garde; 
-                       Book Antiqua=book antiqua,palatino; 
-                       Comic Sans MS=comic sans ms,sans-serif; 
-                       Courier New=courier new,courier; 
-                       Georgia=georgia,palatino; 
-                       Helvetica=helvetica; 
-                       Impact=impact,chicago; 
-                       Symbol=symbol; 
-                       Tahoma=tahoma,arial,helvetica,sans-serif; 
-                       Terminal=terminal,monaco; 
-                       Times New Roman=times new roman,times; 
-                       Trebuchet MS=trebuchet ms,geneva; 
-                       Verdana=verdana,geneva; 
-                       Webdings=webdings; 
-                       Wingdings=wingdings,zapf dingbats,
-                   '''
+    'content_css': ['https://czornykot.pl/static/czarny_kot/bootstrap-5.3.2/dist/css/bootstrap.min.css',
+                    'https://czornykot.pl/static/czarny_kot/assets/css/czarny_kot.css',
+                    ],
+    'font_formats': "Bazowa = system-ui",
+    'statusbar': True,
 }
 
 # TINYMCE_SPELLCHECKER = True
