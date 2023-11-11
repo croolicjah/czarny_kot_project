@@ -82,7 +82,7 @@
           event.preventDefault();
           window.history.pushState(null, '', contactItem.href.slice(window.location.origin.length + 1));
           let element = document.getElementById(contactItem.href.slice(window.location.origin.length + 1,));
-          element.scrollIntoView();
+          element.scrollIntoView({behavior: 'smooth'});
         }
        });
     </script>
