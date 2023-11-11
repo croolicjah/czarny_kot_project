@@ -13,7 +13,12 @@ class HomeViews(View):
         url = request.path_info
         if 'facebook' in request.headers['User-Agent'] and url != '/':
             post = Post.objects.get(pk=url.split('-')[1])
-            context = {'post': post, 'url': request.build_absolute_uri()}
+            context = {
+                'title': post.carousel_title,
+                'description': post.lead_feat,
+                'post': post,
+                'url': request.build_absolute_uri(),
+            }
             return render(request, 'czarny_kot/facebook.html', context=context)
 
         # if no bots
