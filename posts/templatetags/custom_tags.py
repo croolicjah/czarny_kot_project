@@ -15,9 +15,9 @@ def get_post_section_links(post_section_value=6, name='Kontakt'):
     lookup_post = Post.objects.get(pk=post_section_value)
     sections = Section.objects.filter(order__lte=99)
     for section in sections:
-        new_item = '#sekcja-' + str(section.id) + '/' + slugify(section.name), section.name, section.order
+        new_item = '#sekcja-' + str(section.id) + '/' + slugify(section.name), section.name, section.id, section.order
         navbar_menu.append(new_item)
-    navbar_menu.sort(key=itemgetter(2))
-    new_item = '#post-' + str(lookup_post.id) + '/' + slugify(lookup_post.carousel_title), name
+    navbar_menu.sort(key=itemgetter(3))
+    new_item = 'post-' + str(lookup_post.id) + '-' + slugify(lookup_post.carousel_title), name, lookup_post.section.id
     navbar_menu.append(new_item)
     return navbar_menu

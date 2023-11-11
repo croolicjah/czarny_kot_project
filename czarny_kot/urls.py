@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.conf.urls.static import static
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path, include, re_path
 # from django.views import View
 from czarny_kot.views import HomeViews
 from czarny_kot import settings
@@ -25,6 +25,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', HomeViews.as_view(), name='home'),
     path('tinymce/',include('tinymce.urls')),
+    re_path(r'^post-(?P<post_id>\d+)-(?P<slug>[\w-]+)$', HomeViews.as_view(), name='home-sub'),
+    # path('<str:post_url>', HomeViews.as_view(), name='home'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

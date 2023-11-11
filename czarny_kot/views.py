@@ -8,8 +8,15 @@ from posts.models import Post, Section
 
 
 class HomeViews(View):
-    def get(self, request):
+    def get(self, request, post_id=None, slug=''):
+        # only for facebook bots
+        url = request.path_info
+        if 'facebook' in request.headers['User-Agent'] and url != '/':
+            post = Post.objects.get(pk=url.split('-')[1])
+            context = {'post': post, 'url': request.build_absolute_uri()}
+            return render(request, 'czarny_kot/facebook.html', context=context)
 
+        # if no bots
         posts = Post.objects.all()
         sections = Section.objects.all()
 
