@@ -183,7 +183,6 @@ TINYMCE_DEFAULT_CONFIG = {
                     'https://czornykot.pl/static/czarny_kot/assets/css/czarny_kot.css',
                     ],
     'font_formats': "Bazowa = system-ui",
-    'statusbar': True,
 }
 
 # TINYMCE_SPELLCHECKER = True
