@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
 {#  <meta property="og:url" content=url />#}
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content={{ post.feat_title }} />
-  <meta property="og:description" content={{ post.lead_feat }} />
+{#  <meta property="og:type" content="article" />#}
+  <meta property="og:title" content={{ post.carousel_title }} />
+  <meta property="og:description" content={{ post.lead_carousel_dot }} />
   <meta property="og:image"
         content={% if post.photo_carousel_imgur %} {{ post.photo_carousel_imgur }} {% else %} {{ post.photo_feat_imgur }} {% endif %}/>
     <title>Czôrny Kòt - {{ post.feat_title }}</title>
