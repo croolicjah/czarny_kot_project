@@ -5,6 +5,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.views import View
 from posts.models import Post, Section
+from banners.models import Banner
 
 
 class HomeViews(View):
@@ -38,6 +39,7 @@ class HomeViews(View):
             'carousel_posts': carousel_posts,
             'dot_posts': dot_posts,
             'section_posts': posts_on_site,
+            'banners': Banner().prepare_banner_set(),
         }
         return render(request, 'czarny_kot/front-page.html', context=context)
 

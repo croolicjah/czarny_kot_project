@@ -1,14 +1,15 @@
 {% extends "czarny_kot/base.html" %}
 {% load static %}
+{% load custom_tags %}
 {% block content %}
-  <div id="myCarousel" class="carousel slide carousel-fade mb-6" data-bs-ride="carousel" data-bs-theme="light">
+  <div id="myCarousel" class="carousel slide carousel-fade mb-4" data-bs-ride="carousel" data-bs-theme="light">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
 
-    <div class="carousel-inner ">
+    <div class="carousel-inner">
       {% for  post in carousel_posts %}
         <div id="carousel-{{ post.2.id }}" class="carousel-item {% if post.2.order == 1 %}active{% endif  %}">
           <!-- solution for responsive photo on smaller screen - pass between with > height. on smaller screens height will be bigger.
@@ -41,10 +42,18 @@
     </button>
   </div> <!-- End of carousel -->
 
+  <!-- place top banner -->
+  {% if banners.top_banner %}
+    <div class="container">
+      <div id="top-ban" class="shadow col-auto mx-auto p-2 mb-5 bg-body-tertiary rounded text-center">
+        <a href="{{ banners.top_banner.link }}" target="_blank"><img class="img-fluid" src="{{ banners.top_banner.image_banner.url }}" alt="autopromocja"></a>
+      </div>
+    </div>
+  {% endif %}
+
   <!-- Marketing messaging and featurettes
   ================================================== -->
   <!-- Wrap the rest of the page in another container to center all the content. -->
-
   <div class="container marketing">
 
     <!-- Three columns of text below the carousel. We call those elements: Kropki (Dots in english) -->
@@ -65,75 +74,131 @@
       {% endfor %}
     </div><!-- /.row -->
 
-    <!-- START THE FEATURETTES, in polish we call them fit-y -->
-    {% for post in section_posts %}
-       {% ifchanged post.2.section_id %}
-         {% if forloop.counter|divisibleby:"2" and post.2.section.order < 100 %}
-            <div id="sekcja-{{ post.2.section.id }}/{{ post.2.section.name|slugify }}" class="section-divider row justify-content-between align-items-center pb-0 pt-0 pt-0 pb-sm-5 pt-sm-5">
-              <div class="featurette-divider line col-1"></div>
-              <a class="h1 col-5 col-sm-4 col-md-4 col-xl-2 ps-sm-3 pe-sm-3"><span class="p-0 mx-auto">{{ post.2.section.name }}</span></a>
-              <div class="featurette-divider line col-1 col-sm-3 col-md-3 col-xl-6"></div>
-              <img class="col-3 col-lg-2 ps-2 pe-2 ps-sm-3 pe-sm-3 ps-md-4 pe-md-4 ps-xl-5 pe-xl-5" src="{{ post.2.section.image.url }}" referrerpolicy="no-referrer" alt="{{ post.2.section.name }}">
-              <div class="featurette-divider line col-1 "></div>
-            </div>
-         {% elif post.2.section.order < 100 %}
-            <div id="sekcja-{{ post.2.section.id }}/{{ post.2.section.name|slugify }}" class="section-divider justify-content-between align-items-center mt-1 mb-1 pb-0 pb-0 pt-0  pt-0 pb-sm-5 pt-sm-5">
-              <div class="featurette-divider line col-1"></div>
-              <img class="col-3 col-lg-2 ps-2 pe-2 ps-sm-3 pe-sm3 ps-md-4 pe-md-4 ps-xl-5 pe-xl-5" src="{{ post.2.section.image.url }}" referrerpolicy="no-referrer" alt="{{ post.2.section.name }}">
-              <div class="featurette-divider line col-1 col-sm-3 col-md-3 col-xl-6"></div>
-              <div class="h1 col-5 col-sm-4 col-md-4 col-xl-2 ps-sm-3 pe-sm-3 ">{{ post.2.section.name }}</div>
-              <div class="featurette-divider line col-1"></div>
-            </div>
-         {% else %}
-            <hr class="featurette-divider mb-4 mt-4 mb-sm-5 mt-sm-5 pb-0 pt-0">
-         {% endif %}
-       {% else %}
-         <hr class="featurette-divider mb-4 mt-4 mb-sm-5 mt-sm-5">
-       {% endifchanged %}
-
-
-      <div class="row featurette ">
-        <div class="mobile" id="post-{{ post.2.id }}-{{ post.2.carousel_title|slugify }}">
-          {% if post.2.section.order < 100 and post.2.section.order > 0 %}
-            <!-- Only for screens < 992px (lg)-->
-            <div class="mobile-third"><img
-              src="{{ post.2.photo_feat_imgur.url }}"
-              class="{% cycle 'float-end' 'float-start' %} d-md-block d-lg-none featurette-image img-fluid w-100" width='500'  height="auto"
-              referrerpolicy="no-referrer"
-              alt="{{ post.2.feat_title}} {{ post.2.grey_fit_title }}">
-            </div>
-            <!-- for screens => 992px there is a float of image to right or left -->
-            <div class="mobile-third">
-              <img
-                src="{{ post.2.photo_feat_imgur.url }}"
-                class="{% cycle 'float-end' 'float-start' %} {% cycle 'ms-5' 'me-5' %} d-none d-lg-block featurette-image img-fluid" width='500'  height="auto"
-                referrerpolicy="no-referrer"
-                alt="{{ post.2.feat_title}} {{ post.2.grey_fit_title }}">
-            </div>
-
-            <div class="mobile-first">
-              <h2 class="featurette-heading">{{ post.2.feat_title}} <span class="text-body-secondary">{{ post.2.grey_fit_title }}</span></h2>
-            </div>
-
-            <div class="mobile-second">
-              <p class="lead">{{ post.2.lead_feat }}</p>
-              <!-- fixing position of button for lg screen-->
-              <div id="collapse-button-{{ post.2.id }}" class="mb-0 flex-lg-row d-lg-flex justify-content-center collapse-button wrapper col-lg-4 col-xl-auto" >
-                <a role="button" data-lta-event="rozwin-{{ post.2.carousel_title|slugify }}" class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapse-{{ post.2.id }}" aria-expanded="false" aria-controls="collapse-{{ post.2.id }}">
-                </a>
+    <div class="row">
+      <div id="featurette-row" class="col-auto col-xl-9 pe-xl-5 order-2 order-xl-1">
+        <!-- START THE FEATURETTES -->
+        {% for post in section_posts %}
+          <!-- place inter banners -->
+          {% if forloop.counter|divisibleby:"3" and not forloop.last %}
+            {% get_banner_content banners.inter_banner forloop.counter as inter %}
+            {% if inter.image_banner %}
+              <div class="justify-content-center">
+                <hr class="featurette-divider mb-4 mt-4 mb-sm-5 mt-sm-5">
+                <div id="inter-ban-{{ forloop.counter }}" class="shadow col-auto mx-auto p-2 mb-1 bg-body-tertiary rounded text-center">
+                  <a href="{{ inter.link }}" target="_blank"><img class="img-fluid" src="{{ inter.image_banner.url }}" alt="autopromocja"></a>
+                </div>
               </div>
-              <div class="lead collapse w-auto pt-3 mb-0" id="collapse-{{ post.2.id }}">{{ post.2.content|safe }}</div>
-            </div>
-          {% elif post.2.section.order == 100 %}
-            <div class="lead not-collapse w-auto pt-3 mb-0" id="collapse-{{ post.2.id }}">{{ post.2.content|safe }}</div>
+            {% elif inter.script %}
+              <div class="justify-content-center ">
+                <hr class="featurette-divider mb-4 mt-4 mb-sm-5 mt-sm-5">
+                <div id="inter-ban-{{ forloop.counter }}" class="shadow col-auto mx-auto p-2 mb-1 bg-body-tertiary rounded text-center">
+                  <div>{{ inter.script|safe }}</div>
+                </div>
+              </div>
+            {% endif %}
           {% endif %}
+
+          <!-- draw section divider -->
+          {% ifchanged post.2.section.id %}
+            {% if forloop.counter|divisibleby:"2" and post.2.section.order < 100 %}
+              <div id="sekcja-{{ post.2.section.id }}/{{ post.2.section.name|slugify }}" class="d-flex section-divider justify-content-between align-items-center mt-1 mb-1 pb-0 pt-0">
+                <hr class="featurette-divider line col-1">
+                <div class="h1 col-auto mb-0 ps-3 pe-3">{{ post.1 }}</div>
+                <hr class="featurette-divider line col-1 col-sm-3 col-md-3 col-xl-6">
+                <img class="col-3 col-lg-2 ps-1 pe-1 ps-sm-3 pe-sm-3 ps-md-4 pe-md-4" src="{{ post.2.section.image.url }}" referrerpolicy="no-referrer" alt="{{ post.2.section.name }}">
+                <hr class="featurette-divider line col-1 ">
+              </div>
+           {% elif post.2.section.order < 100 %}
+             <div id="sekcja-{{ post.2.section.id }}/{{ post.2.section.name|slugify }}" class="d-flex section-divider justify-content-between align-items-center mt-1 mb-1 pb-0 pb-0 pt-0">
+               <hr class="featurette-divider line col-1">
+               <img class="col-3 col-lg-2 ps-1 pe-1 ps-sm-3 pe-sm3 ps-md-4 pe-md-4" src="{{ post.2.section.image.url }}" referrerpolicy="no-referrer" alt="{{ post.2.section.name }}">
+               <hr class="featurette-divider line col-1 col-sm-3 col-md-3 ">
+               <div class="h1 col-auto mb-0 ps-3 pe-3">{{ post.1 }}</div>
+               <hr class="featurette-divider line col-1">
+             </div>
+           {% endif %}
+         {% else %}
+           {% if not forloop.last %}
+             <hr class="featurette-divider mb-4 mt-4 mb-sm-5 mt-sm-5">
+           {% endif %}
+         {% endifchanged %}
+
+         <div class="row featurette">
+           <div class="mobile" id="post-{{ post.2.id }}-{{ post.2.carousel_title|slugify }}">
+             {% if post.2.section.order < 100 and post.2.section.order > 0 %}
+               <!-- Only for screens < 992px (lg)-->
+               <div class="mobile-third"><img
+                 src="{{ post.2.photo_feat_imgur.url }}"
+                 class="d-md-block d-lg-none featurette-image img-fluid fit w-100"
+                 referrerpolicy="no-referrer"
+                 alt="{{ post.2.feat_title}} {{ post.2.grey_fit_title }}">
+               </div>
+               <!-- for screens => 992px there is a float of image to right or left -->
+               <div class="mobile-third">
+                 <img
+                   src="{{ post.2.photo_feat_imgur.url }}"
+                   class="{% cycle 'float-end' 'float-start' %} {% cycle 'ms-5' 'me-5' %} d-none d-lg-block featurette-image img-fluid" width="400" height="auto"
+                   referrerpolicy="no-referrer"
+                   alt="{{ post.2.feat_title}} {{ post.2.grey_fit_title }}">
+               </div>
+
+               <div class="mobile-first">
+                 <h2 class="featurette-heading">{{ post.2.feat_title}} <span class="text-body-secondary">{{ post.2.grey_fit_title }}</span></h2>
+               </div>
+
+               <div class="mobile-second">
+                 <p class="lead">{{ post.2.lead_feat }}</p>
+                 <!-- fixing position of button for lg screen-->
+                 <div id="collapse-button-{{ post.2.id }}" class="mb-0 flex-lg-row d-lg-flex justify-content-center collapse-button wrapper col-lg-4 col-xl-auto" >
+                   <a role="button" data-lta-event="rozwin-{{ post.2.carousel_title|slugify }}" class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapse-{{ post.2.id }}" aria-expanded="false" aria-controls="collapse-{{ post.2.id }}">
+                   </a>
+                 </div>
+                 <div class="lead collapse w-auto pt-3 mb-0" id="collapse-{{ post.2.id }}">{{ post.2.content|safe }}</div>
+               </div>
+             {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+
+        <!-- /END THE FEATURETTES -->
+      </div>
+      <!-- right column only for screens >= 1200px -->
+      {% if banners.right_banner %}
+          <div id="right-banner" class="d-none d-xl-block col-xl-3 mt-5 order-xl-2">
+            <div class="sticky-top">
+            {% for right in banners.right_banner.items %}
+              <div class="mt-4 shadow p-2 bg-body-tertiary rounded text-center ">
+                <a href="{{ right.1.link }}" target="_blank"><img class="img-fluid" src="{{ right.1.image_banner.url }}" alt="promocja"></a>
+              </div>
+              {% if not forloop.last %}
+{#                <hr class="featurette-divider line mt-4 mb-3">#}
+              {% endif %}
+            {% endfor %}
+            </div>
+          </div>
+      {% endif %}
+      <!-- smaller screens < 1200 px - banners just under dots -->
+      <div id="sm-screen-banner" class="d-block d-xl-none col-auto mx-auto order-1">
+        <div class="shadow p-2 bg-body-tertiary rounded text-center ">
+          <a href="{{ banners.sms_banner.link }}" target="_blank"><img class="img-fluid" src="{{ banners.sms_banner.image_banner.url }}" alt="promocja"></a>
         </div>
+      </div>
     </div>
-    {% endfor %}
 
-    <hr class="featurette-divider mt-5 mb-4">
+  {% with post=section_posts|last %}
+    <div class="justify-content-center ">
+      <hr class="featurette-divider mb-4 mt-4 mb-sm-5 mt-sm-5">
+      {% if banners.bottom_banner %}
+        <div id="bottom-ban" class="shadow col-auto mx-auto mt-0 p-2 mb-4 bg-body-tertiary rounded text-center">
+          <a href="{{ banners.bottom_banner.link }}"  target="_blank"><img class="img-fluid" src="{{ banners.bottom_banner.image_banner.url }}" alt="autopromocja"></a>
+        </div>
+      {% endif %}
 
-    <!-- /END THE FEATURETTES -->
+      <div class="lead not-collapse col-12 pt-3 mb-0" id="collapse-{{ post.2.id }}">{{ post.2.content|safe }}</div>
+      <hr class="featurette-divider mt-5 mb-4">
+    </div>
+  {% endwith %}
+
 
   </div><!-- /.container -->
 {% endblock %}

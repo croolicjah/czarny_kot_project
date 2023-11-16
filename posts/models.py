@@ -3,16 +3,14 @@ from operator import itemgetter
 from django.core.files.storage import storages
 from django.db import models
 from django.utils import timezone
-#
-# #
-# #
-# STORAGE = ImgurStorage()
+
+
 STORAGE = storages['imgur']
 
 
 class Section(models.Model):
     name = models.CharField(max_length=15, verbose_name='Nazwa')
-    order = models.IntegerField(null=True, blank=True, verbose_name='Kolejność')
+    order = models.IntegerField(default=0, verbose_name='Kolejność')
     image = models.FileField(upload_to='CzornyKotPL', storage=STORAGE, verbose_name='Zdjęcie/ikona sekcji', null=True, blank=True)
 
     def __str__(self):

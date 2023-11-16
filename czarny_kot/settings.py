@@ -14,10 +14,7 @@ import environ
 
 from pathlib import Path
 
-env = environ.Env(
-    # set casting, default value
-    # DEBUG=(bool, False)
-)
+env = environ.Env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -30,8 +27,8 @@ environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 SECRET_KEY = env("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = env('DEBUG')
-DEBUG = False
+
+DEBUG = True
 
 ALLOWED_HOSTS = ['*', '.czarny_kot.app']
 
@@ -51,7 +48,7 @@ INSTALLED_APPS = [
     'czarny_kot',
     'posts',
     'tinymce',
-    # 'django_imgur',
+    'banners',
 ]
 
 MIDDLEWARE = [

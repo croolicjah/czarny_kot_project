@@ -5,7 +5,8 @@ from django.utils.text import slugify
 from posts.models import Post, Section
 
 register = template.Library()
-register.simple_tag(name="nav_links_fill")
+# register.simple_tag(name="nav_links_fill")
+# register.simple_tag(name="nav_links_fill")
 
 
 # tag returns pack of links for navbar (made from sections and kontakt)
@@ -21,3 +22,12 @@ def get_post_section_links(post_section_value=6, name='Kontakt'):
     new_item = 'post-' + str(lookup_post.id) + '-' + slugify(lookup_post.carousel_title), name, lookup_post.section.id
     navbar_menu.append(new_item)
     return navbar_menu
+
+
+@register.simple_tag(name="get_banner_content")
+def get_banner_content(dictionary, item_key):
+    try:
+        value = dictionary[item_key]
+    except KeyError:
+        return False
+    return value
