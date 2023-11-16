@@ -14,7 +14,7 @@ register = template.Library()
 def get_post_section_links(post_section_value=6, name='Kontakt'):
     navbar_menu = []
     lookup_post = Post.objects.get(pk=post_section_value)
-    sections = Section.objects.filter(order__lte=99)
+    sections = Section.objects.filter(order__range=(1,99))
     for section in sections:
         new_item = '#sekcja-' + str(section.id) + '/' + slugify(section.name), section.name, section.id, section.order
         navbar_menu.append(new_item)
