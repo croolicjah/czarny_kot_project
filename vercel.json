@@ -1,12 +1,6 @@
 {
   "builds": [
-    {
-      "src": "build_files.sh",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "static"
-      }
-    },
+
     {
       "src": "/czarny_kot/wsgi.py",
       "use": "@vercel/python",
