@@ -46,7 +46,11 @@
   {% if banners.top_banner %}
     <div class="container">
       <div id="top-ban" class="shadow col-auto mx-auto p-2 mb-5 bg-body-tertiary rounded text-center">
-        <a href="{{ banners.top_banner.link }}" target="_blank"><img class="img-fluid" src="{{ banners.top_banner.image_banner.url }}" alt="autopromocja"></a>
+        {% if banners.top_banner.image_banner %}
+          <a href="{{ banners.top_banner.link }}" target="_blank"><img class="img-fluid" src="{{ banners.top_banner.image_banner.url }}" alt="autopromocja"></a>
+        {% elif banners.top_banner.script %}
+          <div>{{ banners.top_banner.script|safe }}</div>
+        {% endif %}
       </div>
     </div>
   {% endif %}
@@ -168,7 +172,11 @@
             <div class="sticky-top">
             {% for right in banners.right_banner.items %}
               <div class="mt-4 shadow p-2 bg-body-tertiary rounded text-center ">
-                <a href="{{ right.1.link }}" target="_blank"><img class="img-fluid" src="{{ right.1.image_banner.url }}" alt="promocja"></a>
+                {% if right.1.image_banner %}
+                  <a href="{{ right.1.link }}" target="_blank"><img class="img-fluid" src="{{ right.1.image_banner.url }}" alt="promocja"></a>
+                {% elif right.1.script %}
+                  <div>{{ right.1.script|safe }}</div>
+                {% endif %}
               </div>
               {% if not forloop.last %}
 {#                <hr class="featurette-divider line mt-4 mb-3">#}
@@ -180,7 +188,11 @@
       <!-- smaller screens < 1200 px - banners just under dots -->
       <div id="sm-screen-banner" class="d-block d-xl-none col-auto mx-auto order-1">
         <div class="shadow p-2 bg-body-tertiary rounded text-center ">
-          <a href="{{ banners.sms_banner.link }}" target="_blank"><img class="img-fluid" src="{{ banners.sms_banner.image_banner.url }}" alt="promocja"></a>
+          {% if banners.sms_banner.image_banner %}
+            <a href="{{ banners.sms_banner.link }}" target="_blank"><img class="img-fluid" src="{{ banners.sms_banner.image_banner.url }}" alt="promocja"></a>
+          {% elif banners.sms_banner.script %}
+            <div>{{ banners.sms_banner.script|safe }}</div>
+          {% endif %}
         </div>
       </div>
     </div>
@@ -190,7 +202,11 @@
       <hr class="featurette-divider mb-4 mt-4 mb-sm-5 mt-sm-5">
       {% if banners.bottom_banner %}
         <div id="bottom-ban" class="shadow col-auto mx-auto mt-0 p-2 mb-4 bg-body-tertiary rounded text-center">
-          <a href="{{ banners.bottom_banner.link }}"  target="_blank"><img class="img-fluid" src="{{ banners.bottom_banner.image_banner.url }}" alt="autopromocja"></a>
+          {% if banners.bottom_banner.image_banner %}
+            <a href="{{ banners.bottom_banner.link }}"  target="_blank"><img class="img-fluid" src="{{ banners.bottom_banner.image_banner.url }}" alt="autopromocja"></a>
+          {% elif banners.bottom_banner.script %}
+            <div>{{ banners.bottom_banner.script|safe }}</div>
+          {% endif %}
         </div>
       {% endif %}
 
