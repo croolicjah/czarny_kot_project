@@ -1,6 +1,5 @@
 {
   "builds": [
-
     {
       "src": "/czarny_kot/wsgi.py",
       "use": "@vercel/python",
