@@ -8,8 +8,8 @@ from posts.models import Post, Section
 class PostAdmin(admin.ModelAdmin):
     # edit_date = forms.DateField(label='Data edycji', required=True, widget=forms.TextInput(attrs={'size':'20'}))
 
-    list_display = ("carousel_title", "order", "section", )
-    list_editable = ('section', 'order',)
+    list_display = ("carousel_title", "order", "section", "state")
+    list_editable = ('section', 'order', 'state')
 
     # fields = [
     #     'edit_date', 'carousel_title', ('photo_carousel_imgur', 'photo_feat_imgur'),
@@ -34,7 +34,7 @@ class PostAdmin(admin.ModelAdmin):
             # 'description': 'Zmiana daty edycji wpłynie na ustawienie posta na stronie',
         }),
         (None, {
-            'fields': ('edit_date',),
+            'fields': (('edit_date', 'state'), ),
             # 'description': 'Zmiana daty edycji wpłynie na ustawienie posta na stronie',
         }),
         (None, {

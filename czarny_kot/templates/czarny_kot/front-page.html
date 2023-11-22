@@ -128,7 +128,7 @@
          {% endifchanged %}
 
          <div class="row featurette">
-           <div class="mobile" id="post-{{ post.2.id }}-{{ post.2.carousel_title|slugify }}">
+           <div class="mobile" style="scroll-margin-top: 5rem;" id="post-{{ post.2.id }}-{{ post.2.carousel_title|slugify }}">
              {% if post.2.section.order < 100 and post.2.section.order > 0 %}
                <!-- Only for screens < 992px (lg)-->
                <div class="mobile-third"><img
@@ -151,7 +151,7 @@
                </div>
 
                <div class="mobile-second">
-                 <p class="lead">{{ post.2.lead_feat }}</p>
+                 <p class="lead"> {{ post.2.lead_feat }}</p>
                  <!-- fixing position of button for lg screen-->
                  <div id="collapse-button-{{ post.2.id }}" class="mb-0 flex-lg-row d-lg-flex justify-content-center collapse-button wrapper col-lg-4 col-xl-auto" >
                    <a role="button" data-lta-event="rozwin-{{ post.2.carousel_title|slugify }}" class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapse-{{ post.2.id }}" aria-expanded="false" aria-controls="collapse-{{ post.2.id }}">
@@ -187,7 +187,7 @@
       {% endif %}
       <!-- smaller screens < 1200 px - banners just under dots -->
       <div id="sm-screen-banner" class="d-block d-xl-none col-auto mx-auto order-1">
-        <div class="shadow p-2 bg-body-tertiary rounded text-center ">
+        <div class="shadow p-2 bg-body-tertiary rounded text-center">
           {% if banners.sms_banner.image_banner %}
             <a href="{{ banners.sms_banner.link }}" target="_blank"><img class="img-fluid" src="{{ banners.sms_banner.image_banner.url }}" alt="promocja"></a>
           {% elif banners.sms_banner.script %}
@@ -252,7 +252,7 @@
               // scroll to element after click in button but first change url in browser
               window.history.pushState(null, '', btn.value);
               let goToElement = document.getElementById(btn.value);
-              goToElement.scrollIntoView({behavior: 'smooth'});
+              goToElement.scrollIntoView({behavior: 'smooth', block: 'start'});
               collapseElement( btn.id.slice(5,) )
             });
         });

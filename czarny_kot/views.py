@@ -23,7 +23,7 @@ class HomeViews(View):
             return render(request, 'czarny_kot/facebook.html', context=context)
 
         # if no bots
-        posts = Post.objects.all()
+        posts = Post.objects.filter(state='published')
         sections = Section.objects.all()
 
         list_of_posts = [

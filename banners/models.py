@@ -29,6 +29,10 @@ class Banner (models.Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        verbose_name = "Baner"
+        verbose_name_plural = "Banery"
+
     def prepare_banner_set(self):
         __banners = Banner.objects.all().order_by('name', 'order')
         __order_number = 3

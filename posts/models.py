@@ -22,6 +22,11 @@ class Section(models.Model):
 
 
 class Post(models.Model):
+    STATE = [
+        ('draft', 'nieopublikowany'),
+        ('published', 'opublikowany'),
+    ]
+
     carousel_title = models.CharField(max_length=45, verbose_name='Tytuł karuzeli i kropki')
     feat_title = models.CharField(max_length=40,  verbose_name='Tytuł fit-a')
     grey_fit_title = models.CharField(
@@ -53,7 +58,7 @@ class Post(models.Model):
 
     publication_date = models.DateField(auto_now_add=True, verbose_name='Data publikacji')
     edit_date = models.DateField(default=timezone.now, verbose_name='Data edycji')
-
+    state = models.CharField(default='draft', max_length=15, choices=STATE, verbose_name="Stan")
     button_text = models.CharField(max_length=25, default='Sprawdź', verbose_name='Napis przycisku')
 
     def __str__(self):
@@ -68,5 +73,3 @@ class Post(models.Model):
     class Meta:
         verbose_name = "Post"
         verbose_name_plural = "Posty"
-
-
