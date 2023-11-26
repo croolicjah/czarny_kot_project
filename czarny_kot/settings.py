@@ -49,6 +49,8 @@ INSTALLED_APPS = [
     'posts',
     'tinymce',
     'banners',
+    'catalog',
+    'accounts.apps.AccountsConfig',
 ]
 
 MIDDLEWARE = [

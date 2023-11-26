@@ -22,7 +22,20 @@ class HomeViews(View):
             }
             return render(request, 'czarny_kot/facebook.html', context=context)
 
-        # if no bots
+        context = self.get_context()
+
+        return render(request, 'czarny_kot/front-page.html', context=context)
+
+    # def post(self, request, *args, **kwargs):
+    #
+    #     print('-----------')
+    #     print(self.__dict__)
+    #
+    #     context = self.get_context()
+    #     return render(request, 'czarny_kot/front-page.html', context)
+
+    @staticmethod
+    def get_context():
         posts = Post.objects.filter(state='published')
         sections = Section.objects.all()
 
@@ -41,12 +54,7 @@ class HomeViews(View):
             'section_posts': posts_on_site,
             'banners': Banner().prepare_banner_set(),
         }
-        return render(request, 'czarny_kot/front-page.html', context=context)
-
-    def post(self, request):
-        return True
-
-
+        return context
 
 # @login_required(login_url="/accounts/signup")
 # def create(request):

@@ -151,7 +151,7 @@
                </div>
 
                <div class="mobile-second">
-                 <p class="lead"> {{ post.2.lead_feat }}</p>
+                 <p class="lead"><span class="bg-secondary badge badge-pill badge-dark">{{ post.2.edit_date|date:"SHORT_DATE_FORMAT" }}</span> {{ post.2.lead_feat }}</p>
                  <!-- fixing position of button for lg screen-->
                  <div id="collapse-button-{{ post.2.id }}" class="mb-0 flex-lg-row d-lg-flex justify-content-center collapse-button wrapper col-lg-4 col-xl-auto" >
                    <a role="button" data-lta-event="rozwin-{{ post.2.carousel_title|slugify }}" class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapse-{{ post.2.id }}" aria-expanded="false" aria-controls="collapse-{{ post.2.id }}">

@@ -35,10 +35,11 @@
   </head>
 
   <body>
+    {% block header %}
     <header data-bs-theme="dark">
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand " aria-current="page" href="../">Czôrny Kòt</a>
+          <a class="navbar-brand " aria-current="page" href="{% url 'home' %}">Czôrny Kòt</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -54,20 +55,32 @@
             <div class="d-flex ">
               <a href="https://www.facebook.com/CzornyKotSL" target=_blank class="align-self-center overlay-it" aria-label="Idź do Facebooka">
                  <img class="" style="width: 35px;" src="{% static 'czarny_kot/assets/img/social/facebook-white.png' %}"></a>
-              <div class="ms-2"><a href="../admin" class="btn btn-dark" aria-label="Zaloguj do CMS">Zaloguj</a></div>
+              {% if user.is_authenticated %}
+                  <div class="navbar-nav nav-item"><a class="nav-link" href="#" onclick="">Katalog</a></div>
+                  <div class="navbar-nav nav-item"><a class="nav-link" href="{% url 'admin:index' %}" onclick="">Admin</a></div>
+                  <div class=""><a type="button" class="btn btn-dark" href="javascript:{document.getElementById('logout').submit()}" onclick="">Wyloguj</a></div>
+                <form id="logout" method="POST" action="{% url 'logout' %}">{% csrf_token %}
+                  <input type="hidden" />
+                </form>
+              {% else %}
+                <div class="ms-2"><a type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#loginModal">Zaloguj</a></div>
+                {% include "accounts/login_modal.html" %}
+              {% endif %}
             </div>
           </div>
         </div>
       </nav>
     </header>
-
+    {% endblock %}
     <main>
       {% block content %}{% endblock %}
       <!-- FOOTER -->
-      <footer class="container">
-        <p class="float-end"><a class="text-dark" href="#" aria-label="Go to the top of site">Wróć na górę</a></p>
-        <p class="text-dark">Czôrny Kòt 2023 <!-- <a class="text-dark" href="#" aria-label="Read statute of association">Statut</a> &middot; <a class="text-dark" href="#" aria-label="Read about rulse of Czôrny Kòt">Regulamin Książnicy Czôrny Kòt</a> --></p>
-      </footer>
+      {% block footer %}
+        <footer class="container">
+          <p class="float-end"><a class="text-dark" href="#" aria-label="Go to the top of site">Wróć na górę</a></p>
+          <p class="text-dark">Czôrny Kòt 2023 <!-- <a class="text-dark" href="#" aria-label="Read statute of association">Statut</a> &middot; <a class="text-dark" href="#" aria-label="Read about rulse of Czôrny Kòt">Regulamin Książnicy Czôrny Kòt</a> --></p>
+        </footer>
+      {% endblock %}
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

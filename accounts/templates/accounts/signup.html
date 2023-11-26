@@ -1,0 +1,60 @@
+{% extends 'czarny_kot/base.html' %}
+{% load static %}
+{% block header %}
+{% endblock %}
+{% block content %}
+  <div class="container">
+    {% if error %}
+      <div class="mt-3 row mx-auto justify-content-center  col-6 ">
+        <div class="alert alert-danger align-items-center alert-dismissible fade show" role="alert">
+          {{ error }}
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      </div>
+    {% endif %}
+    <div class="card col-6 mx-auto mt-5">
+      <form action="{% url 'signup' %}" method="POST">
+        {% csrf_token %}
+        <div class="row">
+          <div class="col-5 align-self-center ps-5"><img class="w-100" src="{% static 'czarny_kot/assets/img/favicon/logotyp_czarny_kot512x512.png' %}" alt="logo Czarny Kot"></div>
+          <div class="card-body col-6 pe-5">
+            <div class="form-group">
+              <div class="mb-3">
+                 <label class="form-label" for="inputLogin">Login</label>
+                 <input
+                   id="inputLogin" type="text" name="user" placeholder="Użytkownik"
+                   onfocus="this.placeholder = 'podaj nazwę użytkownika'" onblur="this.placeholder = 'Użytkownik'"
+                   required class="form-control black-cat-form"
+                 >
+              </div>
+              <div class="mb-3 mt-1">
+                 <label class="form-label" for="setPassword">Hasło</label>
+                 <input
+                    id="setPassword" type="password" name="password" placeholder="Podaj hasło"
+                    onfocus="this.placeholder = 'podaj hasło'" onblur="this.placeholder = 'Hasło'"
+                    required class="form-control black-cat-form"
+                 >
+              </div>
+              <div class="mb-5 mt-1">
+                 <label class="form-label" for="confirmPassword">Potwierdź hasło</label>
+                 <input
+                    id="confirmPassword" type="password" name="password-confirm" placeholder="Potwierdź hasło"
+                    onfocus="this.placeholder = 'potwierdź hasło'" onblur="this.placeholder = 'Potwierdź hasło'"
+                    required class="form-control black-cat-form"
+                 >
+              </div>
+            </div>
+            <div class="d-flex justify-content-center">
+              <a type="button" href="{% url 'home' %}" aria-label="Powrót na stronę główną" class="btn btn-md btn-outline-dark me-2">Porzuć</a>
+              <button type="submit" class="btn btn-md btn-dark">Zarejestruj</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+{% endblock %}
+{% block footer %}
+{% endblock %}
+
+

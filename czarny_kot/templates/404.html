@@ -8,11 +8,11 @@
         <img src="{% static 'czarny_kot/assets/img/favicon/logotyp_czarny_kot512x512.png' %}" alt="" class="img-fluid">
       </div>
         <div class=" col-md-6 mt-5">
-            <p class="fs-3"> <span class="text-danger">Opps!</span> Page not found.</p>
+            <p class="fs-3"> <span class="text-danger">Łojejku!</span> Nie ma takiej strony</p>
             <p class="lead">
- page you’re looking for doesn’t exist.
+                 Strona, której adres wpisałeś nie istnieje w najgłębszych zakamarkach mroku :)
             </p>
-            <a href="/" class="btn btn-primary">Go Home</a>
+            <a href="{% url 'home' %}" class="btn btn-dark">Idź do strony głównej</a>
         </div>
 
     </div>

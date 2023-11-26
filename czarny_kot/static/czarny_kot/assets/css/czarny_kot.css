@@ -130,6 +130,24 @@
   top: 70px;
 }
 
+.modal-backdrop {
+  z-index: 1000;
+}
+
+ .black-cat-form:focus {
+   border-color: #dee2e6;
+   box-shadow: 8px 8px 24px 0 rgba(66, 68, 90, 1);
+ }
+
+/*input:-webkit-autofill,*/
+/*input:-webkit-autofill:hover,*/
+/*input:-webkit-autofill:focus,*/
+/*input:-webkit-autofill:active {*/
+
+/*  */
+
+/*}*/
+
 /*.btn-bd-primary {*/
 /*  --bd-violet-bg: #712cf9;*/
 /*  --bd-violet-rgb: 112.520718, 44.062154, 249.437846;*/
