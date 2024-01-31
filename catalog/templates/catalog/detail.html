@@ -1,0 +1,440 @@
+{% extends 'czarny_kot/base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+  <form id="create" method="POST" action="{% url 'create' %}">{% csrf_token %}
+              
+
+    <div class="container mt-5 mb-5">
+      <div class="card mx-auto col-9">
+        <div class="">
+          <ul class="nav nav-tabs m-3" id="tabs-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="tabs-basics-tab" data-bs-toggle="tab" data-bs-target="#tabs-basics" type="button" role="tab" aria-controls="tabs-basics" aria-selected="true">Podstawowe</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tabs-edition-tab" data-bs-toggle="tab" data-bs-target="#tabs-edition" type="button" role="tab" aria-controls="tabs-edition" aria-selected="false">Wydanie</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tabs-classification-tab" data-bs-toggle="tab" data-bs-target="#tabs-classification" type="button" role="tab" aria-controls="tabs-classification" aria-selected="false">Klasyfikacja</button>
+            </li>
+
+          </ul>
+        </div>
+        <div class="card-body">
+          <div class="tab-content" id="tabs-tabContent">
+            <!-- PODSTAWOWE-->
+            <div class="tab-pane fade show active" id="tabs-basics" role="tabpanel" aria-labelledby="tabs-basics-tab" tabindex="0">
+              <div class="row mb-3">
+                 <div class="col-3 form-floating">
+                   <select id="item_type" class="form-select black-cat-form" aria-label="choosing item type">
+                      {% for key, value in types.items %}
+                        <option {% if key == '(07)' %} selected {% endif%} value={{ key }}>{{ value }}</option>
+                      {% endfor %}
+                    </select>
+                    <label class="ps-2 ms-3" for="title">wybierz typ pozycji</label>
+                 </div>
+                 <div class="col-9 form-floating">
+                   <input id="title" type="text" name="title" placeholder="tytuł"  required class="form-control black-cat-form">
+                   <label class="ps-2 ms-3" for="title">tytuł</label>
+                 </div>
+              </div>
+              <div class="row mb-3">
+                 <div class="col-6 form-floating">
+                   <input id="subtitle" type="text" name="subtitle" placeholder="podtytuł" class="form-control black-cat-form">
+                   <label class="ps-2 ms-3" for="subtitle">podtytuł</label>
+                 </div>
+                 <div class="col-6 form-floating">
+                   <input id="parallelTitle" type="text" name="parallelTitle" placeholder="tytuł równoległy/oryginalny" class="form-control black-cat-form">
+                   <label class="ps-2 ms-3" for="parallelTitle">tytuł równległy/oryginalny</label>
+                 </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-6 form-floating">
+                  <input id="author" type="text" name="author" placeholder="autor" class="form-control black-cat-form">
+                  <label class="ps-2 ms-3" for="author">autor</label>
+                </div>
+                <div class="col-6 form-floating">
+                  <input id="translator" type="text" name="translator" placeholder="translator" class="form-control black-cat-form">
+                  <label class="ps-2 ms-3" for="translator">tłumacz</label>
+                </div>
+              </div>
+              <div class="row mb-3">
+                 <div class="col-9 form-floating">
+                   <input id="series" type="text" name="series" placeholder="podaj nazwę serii/cyklu" class="form-control black-cat-form">
+                   <label class="ps-2 ms-3" for="series">nazwa serii/cyklu</label>
+                 </div>
+                 <div class="col-3 form-floating">
+                   <input id="series-no" type="text" name="series-no" placeholder="podaj numer cyklu" class="form-control black-cat-form">
+                   <label class="ps-2 ms-3" for="series-no">numer tomu/serii</label>
+                 </div>
+              </div>
+            </div>
+            <!-- END PODSTAWOWE-->
+
+            <!-- WYDANIE-->
+            <div class="tab-pane fade" id="tabs-edition" role="tabpanel" aria-labelledby="tabs-edition-tab" tabindex="0">
+
+              <div class="row mb-3">
+                 <div class="col-6 form-floating">
+                   <input id="publisher" type="text" name="publisher" placeholder="wydawnictwo"  class="form-control black-cat-form">
+                   <label class="ps-2 ms-3" for="publisher">wydawnictwo</label>
+                 </div>
+                 <div class="col-3 form-floating">
+                   <input id="edition" type="text" name="edition" placeholder="numer wydania"  class="form-control black-cat-form">
+                   <label class="ps-2 ms-3" for="edition">numer wydania</label>
+                 </div>
+                 <div class="col-3 form-floating">
+                   <input id="publication_date" type="text" name="publication_year" placeholder="data wydania"  class="form-control black-cat-form">
+                   <label class="ps-2 ms-3" for="publication_date">data wydania</label>
+                 </div>
+              </div>
+              <div class="row mb-3">
+                 <div class="col-3 form-floating">
+                   <input id="language" type="text" name="language" placeholder="język wydania"  class="form-control black-cat-form">
+                   <label class="ps-2 ms-3" for="language">język wydania</label>
+                 </div>
+                 <div class="col-3 form-floating">
+                   <input id="publication-place" type="text" name="publication-place" placeholder="miejsce wydania"  class="form-control black-cat-form">
+                   <label class="ps-2 ms-3" for="publication-place">miejsce wydania</label>
+                 </div>
+                 <div class="col-3 form-floating">
+                   <input id="ISBN" type="text" name="ISBN" placeholder="ISBN"  class="form-control black-cat-form">
+                   <label class="ps-2 ms-3" for="ISBN">ISBN</label>
+                 </div>
+                 <div class="col-3 form-floating">
+                   <input id="ISSN" type="text" name="ISSN" placeholder="ISSN"  class="form-control black-cat-form">
+                   <label class="ps-2 ms-3" for="ISSN">ISSN</label>
+                 </div>
+              </div>
+
+              <div class="row mb-3">
+                <div id='book-kind' class="col-3 form-floating">
+                   <select id="book-type" class="form-select black-cat-form" aria-label="choosing edition kind">
+                      {% for key, value in book_kind.items %}
+                        <option {% if key == '(071)' %} selected {% endif%} value={{ key }}>{{ value }}</option>
+                      {% endfor %}
+                    </select>
+                   <label class="ps-2 ms-3" for="book-type">forma wydania</label>
+                </div>
+                <div id='common-forms' class="col-3 d-none form-floating">
+                    <select id="common-types" class="form-select black-cat-form" aria-label="choose magazine form">
+                      {% for key, value in common_forms.items %}
+                        <option{% if key == '{0}' %} selected {% endif%} value={{ key }}>{{ value }}</option>
+                      {% endfor %}
+                    </select>
+                    <label class="ps-2 ms-3" for="common-types">forma wydania</label>
+                </div>
+                <div id='magazine-kind' class="col-4 d-none">
+                  <div class="row">
+                    <div class="col-5 form-floating">
+                      <input id="magazine-number" type="text" name="magazine-number" placeholder="numer zeszytu"  class="form-control black-cat-form">
+                      <label class="ps-2 ms-3" for="magazine-number">nr zeszytu</label>
+                    </div>
+                    <div class="col-7 form-floating">
+                      <select id="magazine-type" class="form-select black-cat-form" aria-label="choose cycle of magazine">
+                        {% for key, value in magazine_cycle.items %}
+                          <option {% if key == 'monthly' %}selected{% endif %} value={{ key }}>{{ value }}</option>
+                        {% endfor %}
+                      </select>
+                      <label class="ps-2 ms-3" for="magazine-type">typ/cykl</label>
+                    </div>
+                  </div>
+                </div>
+                <div id='traditional-form'  class="col-5">
+                  <div class="row">
+                    <div class="col-7 form-floating">
+                     <input id="dimensions" type="text" name="dimensions" placeholder="wymiary/format" class="form-control black-cat-form">
+                     <label class="ps-2 ms-3" for="dimensions">wymiary/format</label>
+                   </div>
+                    <div class="col-5 form-floating">
+                     <input id="page-number" type="text" name="page-number" placeholder="liczba stron" class="form-control black-cat-form">
+                     <label class="ps-2 ms-3" for="page-number">liczba stron</label>
+                   </div>
+                  </div>
+                </div>
+                <div id="digital-form" class="col-12 d-none ">
+                  <div id="digital-row" class="row row-cols-3">
+                    <div class="col form-floating">
+                      <select id="carrier" class="form-select black-cat-form" aria-label="choose carrier">
+                        {% for key, value in carrier.items %}
+                          <option {% if key == '|1' %} selected {% endif%} value={{ key }}>{{ value }}</option>
+                        {% endfor %}
+                      </select>  
+                      <label class="ps-2 ms-3" for="carrier">nośnik</label>
+                    </div>
+                
+                    <div class="col form-floating">
+                      <input class="form-control black-cat-form" list="fileFormats" id="file-format" placeholder="format pliku">
+                      <datalist id="fileFormats">
+                        {% for key, value in file_formats.items %}
+                          <option data-value={{ key }}>{{ value }}</option>
+                        {% endfor %}
+                      </datalist>
+                      <label for="file-format" class="ps-2 ms-3">format pliku</label>
+                    </div>
+                    <div id='music-video-time' class="col form-floating">
+                      <input id="playback-time" type="text" name="playback-time" placeholder="czas odtwarzania" class="form-control black-cat-form">
+                      <label class="ps-2 ms-3" for="playback-time">czas odtwarzania</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- END WYDANIE -->
+
+            <!-- KLASYFIKACJA I TEMATYKA -->
+            <div class="tab-pane fade" id="tabs-classification" role="tabpanel" aria-labelledby="tabs-clasification-tab" tabindex="0">
+
+              <div class="row mb-3">
+                 <div class="col-4 form-floating">
+                   <input id="genre" type="text" name="genre" placeholder="typ/rodzaj"  class="form-control black-cat-form">
+                   <label class="ps-2 ms-3" for="genre">typ/rodzaj</label>
+                 </div>
+
+                 <div class="col-4 form-floating">
+                   <input class="form-control black-cat-form" list="categoryList" id="category-classification" placeholder="klasyfikacja tematyczna">
+                   <datalist id="categoryList">
+                     {% for key, value in cz_catalog.items %}
+                         <option data-value={{ key }}>{{ value }}</option>
+                     {% endfor %}
+                   </datalist>
+                   <label for="category-classification" class="ps-2 ms-3">klasyfikacja tematyczna</label>
+                 </div>
+
+                 <div class="col-4 form-floating">
+                   <input id="ukd" type="text" name="ukd" placeholder="UKD"  class="form-control black-cat-form">
+                   <label class="ps-2 ms-3" for="ukd">UKD</label>
+                 </div>
+
+              </div>
+              <div class="row mb-3">
+                 <div class="col-4 form-floating">
+                   <input id="subject-time" type="text" name="subject-time" placeholder="okres" class="form-control black-cat-form">
+                   <label class="ps-2 ms-3" for="subject-time">okres</label>
+                 </div>
+                 <div class="col-4 form-floating">
+                   <input id="subject-location" type="text" name="subject-location" placeholder="miejsce/kraj" class="form-control black-cat-form">
+                   <label class="ps-2 ms-3" for="subject-location">miejsce/kraj</label>
+                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4 mb-3 justify-content-end">
+            <button class="col-3 btn btn-dark me-2">Zapisz</button>
+            <button class="col-3 btn btn-dark me-3">Zapisz i dodaj kolejny</button>
+          </div>    
+        </div>
+      </div>
+    </div>
+  </form>   
+{% endblock %}
+{% block footer %}
+
+{% endblock %}
+ {% block javascript %}
+   <script>
+
+   </script>
+ {% endblock %}
+{% block jQuery %}
+    <script>
+     $( function () {
+        let itemType = $('#item_type');
+        let bookType = $('#book-type');
+        let playbackForm = $('#music-video-time');
+        let commonForm = $('#common-forms');
+        let bookKind = $('#book-kind');
+        let digitalForm = $('#digital-form');
+        let traditionalForm = $('#traditional-form')
+        let magazineKind = $('#magazine-kind');
+        let digitalRow = $('#digital-row');
+        let commonType = $("#common-types");
+
+
+        let itemNumber;
+
+ 
+        
+        let itemTypesArray = [
+          {name: bookKind, value: true, addClasses: ["col-9"], removeClasses: ["col-12", "col-5"]},
+          {name: magazineKind, value: false, addClasses: ["col-5"], removeClasses: ["col-12", "col-9"]},
+    
+  
+        ]
+         
+        let changedElements = [
+          {name: traditionalForm, value: true},  
+          {name: digitalForm, value: false},
+          {name: playbackForm, value: false},
+          {name: commonForm, value: false},
+        ]
+         
+        function getMenuValue (menu) {
+          
+          return $(menu).val();
+        }   
+        
+        function checkCommonMenuState () {
+          if (getMenuValue(commonType) === "{0}") {
+             changeElementsArray(traditionalForm, true, changedElements); 
+             changeElementsArray(digitalForm, false, changedElements);
+          } else {
+             changeElementsArray(digitalForm, true, changedElements); 
+             changeElementsArray(traditionalForm, false, changedElements); 
+          }            
+        } 
+         
+
+        
+        function renderForms () {
+          const array = itemTypesArray.concat(changedElements);
+          array.forEach((item) => {
+            showHideElement(item.name, item.value);
+            if (item.name === playbackForm && item.value === false) {
+              digitalRow.removeClass('row-cols-3');  
+              digitalRow.addClass('row-cols-2'); 
+              if (!itemTypesArray["1"].value) {
+                 digitalForm.removeClass(itemTypesArray["0"].removeClasses) ;
+                 digitalForm.addClass(itemTypesArray["0"].addClasses);
+              } else {
+                 digitalForm.removeClass(itemTypesArray["1"].removeClasses) ;
+                 digitalForm.addClass(itemTypesArray["1"].addClasses);
+              } 
+
+
+            } else if (item.name === playbackForm && item.value) {
+              
+              digitalRow.removeClass("row-cols-2");
+              digitalRow.addClass("row-cols-3");
+              if (!itemTypesArray["0"].value) {
+                digitalForm.removeClass(["col-5", "col-9"]);
+                digitalForm.addClass("col-12"); 
+              } else {
+                digitalForm.removeClass(["col-5", "col-12"]);
+                digitalForm.addClass("col-9"); 
+              }
+
+              
+            }
+          });
+        }
+        
+        function clearItemTypes () {
+          itemTypesArray.forEach((item) => {
+            item.value = false;
+          });           
+        }
+        
+        function changeElementsArray (form, value, array) {
+            
+          const result = array.find(({ name }) => name === form);
+          if (result) {
+             result.value = value;
+             
+          } else {
+             alert('nie ma');
+          }
+        }
+        
+        function showHideElement (form, show) {
+          if (show) {
+            form.removeClass('d-none');
+          } else {
+            form.addClass('d-none')  ;
+          }
+          return show;
+        }
+        
+        function changeForms ( selectedItemValue )  {
+          switch (selectedItemValue) {
+
+            case ('(02)'):
+              clearItemTypes();
+              changeElementsArray(magazineKind, true, itemTypesArray);
+              changeElementsArray(commonForm, true, changedElements);
+              changeElementsArray(playbackForm, false, changedElements);   
+              checkCommonMenuState();
+
+              break;
+            case ('(070)'):
+            case ('(071)'):
+                
+            case ('{0}'):
+              changeElementsArray(digitalForm, false, changedElements);
+              changeElementsArray(traditionalForm, true, changedElements);
+              changeElementsArray(playbackForm, false, changedElements);              
+              break;
+            case ('{1}'):
+            case ('(073)'):
+              changeElementsArray(digitalForm, true, changedElements);
+              changeElementsArray(traditionalForm, false, changedElements);
+              changeElementsArray(playbackForm, false, changedElements);    
+              break;
+
+            case ('(04)'):
+            case ('(09)'):
+            case ('(10)'): 
+            case ('(11)'):
+              clearItemTypes();    
+              changeElementsArray(commonForm, false, changedElements);  
+            case ('(072)'):
+              {#changeElementsArray(commonForm, false, changedElements);#}
+              changeElementsArray(digitalForm, true, changedElements);
+              changeElementsArray(playbackForm, true, changedElements);    
+              changeElementsArray(traditionalForm, false, changedElements);
+              break;
+            case ('(01)'):                 
+            case ('(03)'): 
+            case ('(05)'):   
+            case ('(08)'):  
+              clearItemTypes();  
+              changeElementsArray(commonForm, true, changedElements);  
+              changeElementsArray(playbackForm, false, changedElements);  
+              checkCommonMenuState();
+              break;
+            default:
+              clearItemTypes();
+              changeElementsArray(bookKind, true, itemTypesArray);
+              changeElementsArray(commonForm, false, changedElements);
+              if (getMenuValue(bookType) === "(072)") {
+                 changeElementsArray(traditionalForm, false, changedElements); 
+                 changeElementsArray(digitalForm, true, changedElements);
+                 changeElementsArray(playbackForm, true, changedElements);
+              } else if (getMenuValue(bookType) === "(073)") {
+                 changeElementsArray(traditionalForm, false, changedElements); 
+                 changeElementsArray(digitalForm, true, changedElements);
+                 changeElementsArray(playbackForm, false, changedElements); 
+              } else {
+                 changeElementsArray(digitalForm, false, changedElements); 
+                 changeElementsArray(traditionalForm, true, changedElements);                   
+              }
+              {#changeElementsArray(digitalForm, false, changedElements);#}
+              {#changeElementsArray(playbackForm, false, changedElements); #}
+          }
+          renderForms();
+        }
+        
+        itemType.on("change",
+            function () {
+                itemNumber = getMenuValue(this);
+                changeForms(itemNumber);
+            });
+        
+       bookType.on("change", function() {
+          
+          let selectedItem =  $('option:selected',this).val();
+          changeForms(selectedItem);
+        });
+        
+        commonForm.on("change", function() {
+          let selectedItem =  $('option:selected',this).val();
+          changeForms(selectedItem);
+        });      
+     })
+    </script>
+
+{% endblock %}

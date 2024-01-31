@@ -1,0 +1,24 @@
+<div class="col-4 form-floating">
+   <select id="carrier" class="form-select black-cat-form" aria-label="choose carrier">
+     {% for key, value in carrier.items %}
+        <option {% if key == '|1' %} selected {% endif%} value={{ key }}>{{ value }}</option>
+      {% endfor %}
+    </select>  
+   <label class="ps-2 ms-3" for="carrier">nośnik</label>
+ </div>
+
+ <div class="col-3 form-floating">
+   <input class="form-control black-cat-form" list="fileFormats" id="file-format" placeholder="format pliku">
+   <datalist id="fileFormats">
+     {% for key, value in file_formats.items %}
+         <option data-value={{ key }}>{{ value }}</option>
+     {% endfor %}
+   </datalist>
+   <label for="file-format" class="ps-2 ms-3">format pliku</label>
+ </div>
+   
+ <div class="col-4 form-floating">
+   <input id="playback-time" type="text" name="playback-time" placeholder="czas odtwarzania"  required class="form-control black-cat-form">
+   <label class="ps-2 ms-3" for="playback-time">czas odtwarzania</label>
+ </div>
+

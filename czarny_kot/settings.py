@@ -28,12 +28,12 @@ SECRET_KEY = env("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*', '.czarny_kot.app']
 
 CSRF_TRUSTED_ORIGINS = ['https://*.127.0.0.1', 'https://czornykot.pl']
-
+X_FRAME_OPTIONS = "SAMEORIGIN"
 # SECURE_REFERRER_POLICY = 'origin'
 
 # Application definition
@@ -377,7 +377,7 @@ JAZZMIN_SETTINGS = {
     # - carousel
     "changeform_format": "single",
     # override change forms on a per modeladmin basis
-    "changeform_format_overrides": {"auth.user": "collapsible", "auth.group": "vertical_tabs"},
+    "changeform_format_overrides": {"catalog.catalogitem": "horizontal_tabs", "auth.user": "collapsible", "auth.group": "vertical_tabs"},
     # Add a language dropdown into the admin
     # "language_chooser": True,
 }
